@@ -1,17 +1,16 @@
-
 import {
     MailOutlined,
     FacebookOutlined,
-    TwitterOutlined,
-    InstagramOutlined,
-    LinkedinOutlined
-
 } from '@ant-design/icons';
-import './header.css';
 
-export function AppHeader(): JSX.Element {
-    return (<div className={'header'}>
+
+import './search-bar.css';
+import logo from '../assets/images/logo.png';
+
+export function SearchBar(): JSX.Element {
+    return (<div className={'search-bar'}>
         <div className={'spacer'}></div>
+        <img src={logo} alt=''></img>
         <div className={'phone-number'}>
             +91 99466 664495
         </div>
@@ -21,9 +20,7 @@ export function AppHeader(): JSX.Element {
         <div className={'social-icons'}>
             <MailOutlined />
             <FacebookOutlined />
-            <TwitterOutlined />
-            <InstagramOutlined />
-            <LinkedinOutlined />
+         
         </div>
     </div>)
 }
