@@ -1,3 +1,4 @@
+import { Footer } from "../../components/footer";
 import { PetCard } from "../../components/pet-card";
 import { DOGS } from "../../constants/dogs";
 import { HomeCarousel } from "./carousel";
@@ -14,6 +15,7 @@ export function HomePage() {
             <Recommendations />
             <TopSelections />
             <ExploreMore />
+            <Footer />
         </div>
     );
 }
