@@ -3,19 +3,36 @@
     flex-direction: row;
     background-color: rgb(255, 255, 255);
     gap: 10px;
-    padding: 2px 5px;
-  
+    padding: 5px 5px;
+    padding-left: 10px;
+
 }
 
-.search-bar .phone-number {}
 
-.search-bar .email {}
+.search-bar .logo {
+    width: 60px;
 
-.search-bar .social-icons {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    align-items: center;
+}
+
+.search-bar .search-input {
+    max-width: 200px;
+    margin-top: 15px;
+}
+
+.search-bar .cart-icon {
+    font-size: 20px;
+    align-self: center;
+    justify-self: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.search-bar .user-icon {
+    font-size: 20px;
+    align-self: center;
+    justify-self: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .search-bar .spacer {

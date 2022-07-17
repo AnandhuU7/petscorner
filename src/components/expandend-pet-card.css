@@ -1,0 +1,49 @@
+.expandend-pet-card {
+    padding: 10px;
+    box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.05),
+        0 1px 4px hsla(0, 0%, 0%, 0.05),
+        0 2px 8px hsla(0, 0%, 0%, 0.05);
+    transition: 0.3s ease;
+    cursor: pointer;
+
+
+
+}
+
+.expandend-pet-card .expandend-card-image {
+    height: 100%;
+    object-fit: cover;
+    object-fit: center;
+    width: 100%;
+}
+
+.expandend-pet-card:hover {
+    background-color: #8080801c;
+}
+
+.expandend-pet-card .info-list {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+    gap: 5px;
+}
+
+.expandend-pet-card .item {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.expandend-pet-card .expandend-image-wrapper {
+    padding: 10px 10% !important;
+}
+
+.expandend-pet-card .item .label {
+    min-width: 110px;
+
+}
+
+.expandend-pet-card .item .value {
+    text-align: justify;
+
+}

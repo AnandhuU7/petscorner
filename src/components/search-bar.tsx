@@ -1,26 +1,26 @@
-import {
-    MailOutlined,
-    FacebookOutlined,
-} from '@ant-design/icons';
+import { UserOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import { Input } from "antd";
 
+import "./search-bar.css";
+import logo from "../assets/images/logo2.jpg";
+import React from "react";
+import { Link } from "react-router-dom";
 
-import './search-bar.css';
-import logo from '../assets/images/logo.png';
+const Search = Input.Search;
 
 export function SearchBar(): JSX.Element {
-    return (<div className={'search-bar'}>
-        <div className={'spacer'}></div>
-        <img src={logo} alt=''></img>
-        <div className={'phone-number'}>
-            +91 99466 664495
+    function onSearch(value: string) {
+        console.log(value);
+    }
+    return (
+        <div className={"search-bar"}>
+            <Link to={`/home`}>
+                <img src={logo} alt='' className={"logo"}></img>
+            </Link>
+            <div className={"spacer"}></div>
+            <Search placeholder='input search text' onSearch={onSearch} enterButton className={"search-input"}></Search>
+            <UserOutlined className={"user-icon"}></UserOutlined>
+            <ShoppingCartOutlined className={"cart-icon"}></ShoppingCartOutlined>
         </div>
-        <div className={'email'}>
-            anandhuachu@gmail.com
-        </div>
-        <div className={'social-icons'}>
-            <MailOutlined />
-            <FacebookOutlined />
-         
-        </div>
-    </div>)
+    );
 }

@@ -1,0 +1,17 @@
+.pet-card {
+    min-width: 300px;
+}
+.pet-card .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 88px;
+}
+
+.pet-card .pet-card-image {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 3/2;
+}

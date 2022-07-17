@@ -1,0 +1,19 @@
+.app-navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.app-navbar .navbar-link {
+    padding: 5px;
+    min-width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+.app-navbar .navbar-link:hover {
+    color: #fd3260;
+}
