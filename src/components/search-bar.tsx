@@ -19,7 +19,9 @@ export function SearchBar(): JSX.Element {
             </Link>
             <div className={"spacer"}></div>
             <Search placeholder='input search text' onSearch={onSearch} enterButton className={"search-input"}></Search>
-            <UserOutlined className={"user-icon"}></UserOutlined>
+            <Link className={"user-icon"} to={`/login`}>
+                <UserOutlined></UserOutlined>
+            </Link>
             <ShoppingCartOutlined className={"cart-icon"}></ShoppingCartOutlined>
         </div>
     );

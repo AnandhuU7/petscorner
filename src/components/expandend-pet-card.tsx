@@ -17,7 +17,7 @@ export function ExpandendPetCard(props: Props) {
     return (
         <div className={"expandend-pet-card"}>
             <Row gutter={24}>
-                <Col  span={10} className={"expandend-image-wrapper"}>
+                <Col span={10} className={"expandend-image-wrapper"}>
                     <img className={"expandend-card-image"} alt='example' src={props.imageURL} />
                 </Col>
                 <Col span={14}>
@@ -39,7 +39,7 @@ export function ExpandendPetCard(props: Props) {
                                 <b>Life Expectancy</b>
                             </div>
                             <div className={"value"}>
-                            :{props.lifeExpectancy.from} - {props.lifeExpectancy.to} years
+                                :{props.lifeExpectancy.from} - {props.lifeExpectancy.to} years
                             </div>
                         </div>
                         <div className='item'>

@@ -7,4 +7,5 @@
 .page-content {
     height: calc(100vh - 156px);
     overflow: auto;
+    overflow-x: hidden;
 }

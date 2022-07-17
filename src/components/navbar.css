@@ -14,6 +14,11 @@
     text-transform: uppercase;
     color: black;
 }
+
+.app-navbar .navbar-link.active {
+    color: #fd3260;
+}
+
 .app-navbar .navbar-link:hover {
     color: #fd3260;
 }
