@@ -4,21 +4,9 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 export function LoginPage() {
-    // const [isLoggedIn, setLoggedIn] = usePersist("logged-in", false);
-
-    // const navigate = useNavigate();
-
-    // useEffect(() => {
-    //     if (isLoggedIn) {
-    //         navigate("/home");
-    //     } else {
-    //         navigate("/logout");
-    //     }
-    // }, [isLoggedIn]);
-
+ 
     function onFinish(values: any) {
-        // console.log("Received values of form: ", values);
-        // setLoggedIn(true);
+      
     }
 
     return (
@@ -39,18 +27,18 @@ export function LoginPage() {
                         <Checkbox>Remember me</Checkbox>
                     </Form.Item>
 
-                    <Link className='login-form-forgot' to='#'>
+                    {/* <Link className='login-form-forgot' to='#'>
                         Forgot password
-                    </Link>
+                    </Link> */}
                 </Form.Item>
 
                 <Form.Item>
                     <Button type='primary' htmlType='submit' className='login-form-button'>
                         Log in
                     </Button>
-                    Or
+    
                     <Link className='login-form-forgot' to='#'>
-                        register now!
+                        Register now
                     </Link>
                 </Form.Item>
             </Form>

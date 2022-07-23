@@ -1,20 +1,15 @@
+import { LinkedinOutlined } from "@ant-design/icons";
 import "./footer.css";
 
 export function Footer() {
     return (
         <div className="footer-wrapper">
-            <section className='contact-area' id='contact'>
+            {/* <section className='contact-area' id='contact'>
                 <div className='container'>
                     <div className='row'>
                         <div className='col-lg-6 offset-lg-3'>
                             <div className='contact-content text-center'>
-                                <a href='#'>
-                                    <img src='https://i.ibb.co/QDy827D/ak-logo.png' alt='logo' />
-                                </a>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum{" "}
-                                </p>
+
                                 <div className='hr'></div>
                                 <h6>1120 Lorem ipsum dolor sit amet, KC 179050, Chandigarh.</h6>
                                 <h6>
@@ -29,7 +24,7 @@ export function Footer() {
                                         </li>
                                         <li>
                                             <a className='hover-target' href=''>
-                                                <i className='fab fa-linkedin-in'></i>
+                                                <LinkedinOutlined />
                                             </a>
                                         </li>
                                         <li>
@@ -53,10 +48,10 @@ export function Footer() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             <footer>
                 <p>
-                    Copyright &copy; 2019 <img src='https://i.ibb.co/QDy827D/ak-logo.png' alt='logo' /> All Rights
+                    Copyright &copy; 2022 <img src='' alt='' /> All Rights
                     Reserved.
                 </p>
             </footer>

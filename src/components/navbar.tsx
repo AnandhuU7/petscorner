@@ -20,6 +20,9 @@ export function NavBar() {
             <Link className={`navbar-link ${activeRoute === "/birds" ? "active" : ""}`} to={"/birds"}>
                 Birds
             </Link>
+            <Link className={`navbar-link ${activeRoute === "#" ? "active" : ""}`} to={"#"}>
+                Latest
+            </Link>
         </div>
     );
 }

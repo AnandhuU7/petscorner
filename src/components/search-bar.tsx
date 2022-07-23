@@ -22,7 +22,7 @@ export function SearchBar(): JSX.Element {
             <Link className={"user-icon"} to={`/login`}>
                 <UserOutlined></UserOutlined>
             </Link>
-            <ShoppingCartOutlined className={"cart-icon"}></ShoppingCartOutlined>
+            {/* <ShoppingCartOutlined className={"cart-icon"}></ShoppingCartOutlined> */}
         </div>
     );
 }

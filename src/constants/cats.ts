@@ -33,221 +33,368 @@ export interface Cat {
 
 export const CATS: Cat[] = [
     {
-        breed: `PEMBROKE WELSH CORGI`,
-        origin: `Pembrokeshire`,
-        rating: 4.5,
-        id: 101,
+        breed: `SPHYNX CAT`,
+        origin: `Toronto`,
+        rating: 5.5,
+        id: 200,
         lifeExpectancy: {
-            from: 12,
-            to: 15,
+            from: 8,
+            to: 14
         },
-        breedAppearance: `The Pembroke Welsh corgi is a small- to medium-sized herding dog of short stature and sturdy build. Known for its low-set body, large erect ears, and stubby tail, the Pembroke also has a reputation for being a wonderful companion. Pembroke Welsh corgis are achondroplastic, a dwarf breed with shortened legs. They are the shortest breed of the herding dog group.`,
-        breedHighlights: `Originally bred to herd cattle, sheep, and horses, the Pembroke Welsh Corgi is an active and intelligent dog breed. Easy to train and eager to learn, Pembroke’s are great with children and other pets, and you can find them in four different coat colours and markings.
-    Adaptable and loving with the whole family, Corgis can fit into just about any household, whether it’s an apartment or a large home with a yard. However, they do have quite a bit of energy for a small dog. They’ll need plenty of walks and active play sessions. You might be surprised by how quickly these short-legged pups can move! For humans who can meet the breed’s needs, the Pembroke will make an excellent family companion, even for novice pet parents.`,
+        breedAppearance: `Sphynx is medium sized cat with bald and wrinkled skin. They have fine hair and are muscular for their size. Their ears are unique with large size resembling to that of bat. The eyes are big and wide, most of the time observed lemon like with a slight slant at upper corners.`,
+        breedHighlights: 'Sphynx is the most attention loving cat. Much alien in looks it also has a funny character with lots of showiness. It is a cat of family who loves to see new people and make them laugh. It is a smart and athletic by nature.',
         weight: {
-            from: 11,
-            to: 14,
+            from: 6,
+            to: 12
         },
         height: {
-            from: 25,
-            to: 30,
+            from: 8,
+            to: 10
         },
-        litterSize: 6,
-        history: `Originating in Pembrokeshire, Wales, the Pembroke Welsh Corgi is an enchanting dog whose background is steeped in folklore. According to Welsh legend, the Pembroke Welsh Corgi sprang from the lairs of fairies and elves!
-    For those who don't believe in fairy tales, there are historians who say that the Pembroke Welsh Corgi is descended from Vallhunds, Swedish cattle dogs that were brought to Wales by the Vikings in the 9th and 10th centuries. Others think they may have been descended from dogs that were brought to Wales by Flemish weavers in the 12th century.
-    In the 1920s, the UK Kennel Club recognized Corgis as purebred dogs. They were officially known as Welsh Corgis when exhibited for the first time in 1925. At that time, Pembrokes and Cardigans were shown in the same class as one breed.
-    Then, in 1934, the Kennel Club recognized the Pembroke and the Cardigan as two separate breeds. In that same year, the American Kennel Club followed suit. Pembrokes were first shown in the U.S. in 1936.
-    Pembrokes have slowly gained in popularity in the U.S., and today, are among the top 50 most popular breeds for family pets. They're also popular with Her Majesty, Queen Elizabeth II of England, who received her first Pembroke Welsh Corgi from her father (King George VI) in 1933.
-    The puppy's name was Rozavel Golden Eagle and was a playmate for Elizabeth and her sister, Margaret. Elizabeth has loved the little dogs ever since, and currently has a pack of them lounging around Buckingham Palace.`,
-        originally: `The Pembroke Welsh corgi of Pembrokeshire is descended from dogs brought to Wales by Flemish weavers about AD 1100. The ancestors of the Pembroke belonged to the group that produced the Keeshond, Pomeranian, and Samoyed. The corgi gained exposure from its association with the royal family of Britain; Queen Elizabeth II has had corgis since her childhood.`,
-        currentlyUsedAs: `Although Pembrokes are still used as working dogs, they are most often seen as family pets these days. They are known for being happy, loving, and intelligent, but with a stubborn or independent streak at times. They are easy to train but don't expect your Pembroke to be subservient. They like to think for themselves.`,
-        training: `As with all breeds, early socialization and puppy training classes are strongly recommended. Gently exposing the puppy to a wide variety of people, places, and situations between the ages of 7 weeks and 4 months will help him develop into a well-adjusted, well-mannered adult. Pembrokes often have a mind of their own, but they are energetic, willing, and highly intelligent partners who respond well to training. Positive, reward-based training works best with this sensitive breed.`,
-        healthCare: `Pembrokes are generally healthy, but like all breeds, they're prone to certain health conditions. Not all Pembrokes will get any or all of these diseases, but it's important to be aware of them if you're considering this breed.
-    If you're buying a puppy, find a good breeder who will show your health clearances for both your puppy's parents. Health clearances prove that a dog has been tested for and cleared of a particular condition.
-    In Pembrokes, you should expect to see health clearances from the Orthopaedic Foundation for Animals (OFA) for hip dysplasia (with a score of fair or better), elbow dysplasia, hypothyroidism, and von Willebrand's disease; from Auburn University for thrombopathia; and from the Canine Eye Registry Foundation (CERF) certifying that eyes are normal. You can confirm health clearances by checking the OFA website (offa.org).
-    With a Pembroke Welsh Corgi one should be careful about these illnesses:
-    Hip Dysplasia.
-    Cataracts.
-    Cutaneous Asthenia.
-    Cystinuria.
-    Epilepsy, etc. Athletic and surprisingly fast, Pembrokes were bred to be herding dogs and require plenty of exercises each day. That said, they make fine apartment dogs as long as they get the physical stimulation they need.
-    With their short legs and long backs, they should not be expected to hop up on (or down from) the couch or any other modest height — fractures are common.
-    Corgis can adapt quite easily to living in the country or the city. Although their coats are weather-resistant and they do well in most climates, they are very people-oriented and need to be a part of the family at all times — not left alone in the backyard.`,
-        livingCondition: `They require only quick, weekly grooming except in times of shedding. They need to be watched carefully for developing obesity. These dogs are easy to keep and do well with a minimal amount of food. Added weight can be an extra strain on the long, low back.
-    They are quick to learn tricks and seem to have a sense of humour. They are excellent watchdogs if anything prone to unnecessary alarm barking.
-    Perhaps because of their small stature, corgis seem to be attracted to high places and may occasionally be found on the back of the sofa or in the middle of the kitchen table. Corgis do need a firm but kind hand in training.`,
-        excersie: `A strong, athletic little dog developed to herd cattle and other livestock, the Pembroke Welsh Corgi loves physical activity and is happiest when he has a job to do. Corgis benefit from moderate daily exercise to maintain their physical and mental health. Pembrokes can do well on long walks or slow jogs, but their short legs won't allow them to keep up with a bicycle
-    rider. Avoid extreme heat or cold, and always provide plenty of cool, fresh water after exercise. Many Pembrokes enjoy and excel at canine activities such as agility, herding, obedience, and tracking events.`,
-        grooming: `The Pembroke has a thick, weatherproof double coat’s soft, light undercoat covered by a coarse outer coat. The breed sheds a fair amount on a daily basis, and even more so in the late spring/early summer. A daily once-over with a comb and a slicker brush will remove a lot of the shed hair before it is all over the house. During shedding season, baths help to loosen the dead hair the dog must be completely dry before brushing begins and a rake helps strip out the undercoat. As with all breeds, the Corgi's nails should be trimmed regularly, and ears checked to be sure they are clean and healthy.`,
-        pros: [`Companionship.`, `Exceptionally Smart.`, `Sociable.`, `Loved by Royal families.`],
-        cons: [`Need daily stimulation.`, `Need high-quality dog food.`, `Shedding.`, `Can get overweight very easy.`],
-        imageURL: `https://cdn.shopify.com/s/files/1/1199/8502/files/corgi_1.jpg?v=1644254591`,
+        litterSize: 4,
+        history: `Their history dates back to 1966 when Prune, a hairless kitten was born to a domestic cat Elizabeth in Toronto. It was case of mutation. Owner of Elizabeth realized the uniqueness of this new kitten and tried backcrossing which produced one more naked kitten.`,
+        originally: `Their breed originated in Toronto. Sphynx are a result of mutation of genes. They have very little hair to prove their belongingness to normal cat species but so they remain different because of the unnatural phenomenon (hairlessness) occurred to them.`,
+        currentlyUsedAs: `Sphynx are currently used as pet`,
+        training: `These naked cats takes a lot of time to become comfortable at new place. You need to love and attend them to make them feel comfortable. And once they start roaming by themselves in your home you can start their training. They easily get accustomed to grooming and would love to have pedicures and baths depending on their mood, but unlike other breeds they are grooming friendly. They originally are a fun chap so you can train them to become more entertaining. They would love to talk and become part of your family and friend circle. You can also expect good sport from them as they are athlete enough to play and exercise. `,
+        healthCare: `Because they lack the protection of a fur coat, a hairless Sphynx cat requires special care. Sphynx cats have few health or genetic problems, and have a normal lifespan. They are generally considered to be a very robust breed. But they do still face some problems unique to their physical nature, most of which have to do with their hairlessness.`,
+        livingCondition: `Sphynx cats are vulnerable to the sun and cold and are meant to be indoor cats. So exposure to the outdoors should be limited. Also, as their bodies are constantly working to keep themselves warm, their metabolism is higher than other cats so they need to be fed more food at meal times`,
+        excersie: `Sphynx is a happy go lucky breed. They practice exercise through play. Not very eager with outdoor strolls they find activities indoor that will give them a chance to show off their stunts and acrobatics. They can wear themselves out by running behind a laser point or fur mice or simply by running back and forth in the house, but they make sure they remain agile and active.`,
+        grooming: `These naked cats need special care because of their unusual coat condition. It is advised to bath them weekly to prevent their body from buildup of oil and dust. Sphynx are vulnerable to heat and cold so exposure to outside should be limited. One more reason to keep them inside is that they are also prone to infections. Their metabolism is high so they need to be fed really well!`,
+        pros: [`Sphynx breed is friendly, 
+        affectionate and intelligent, Good for them who dont like pets shedding their fur all over,These are indoor cats and are adaptive to circumstances., They are less prone to trigger allergies and are quiet entertaining.`],
+        cons: [`Purebreds are nearly always expensive to purchase, and often prone to particular diseases or birth defects. They are more prone than other breeds to health problems, they have a shorter lifespan than most cats, they are rather expensive, and they require special grooming attention including regular baths. They also have a high metabolism, so they eat a lot. And their skin is rather sensitive and they can easily suffer from sun burn.`
+        ],
+        imageURL: `https://cdn.shopify.com/s/files/1/1199/8502/files/hairless-cat-breeds.jpg`
     },
     {
-        breed: ` LHASA APSO`,
-        origin: `Tibet`,
-        rating: 4.7,
-        id: 102,
+        breed: `PERSIAN CAT`,
+        origin: `Iran`,
+        rating: 6.5,
+        id: 201,
         lifeExpectancy: {
             from: 12,
-            to: 15,
+            to: 17
         },
-        breedAppearance: `Full-grown male Lhasa apsos are about 10–11 inches tall and weigh 12–18 pounds, while female pups are slightly smaller. Lhasa apsos have gorgeous black, tan, cream, white, and/or red-coloured coats, but they can also be blue, grey, and silver, though those are less common. Their luscious locks grow long, so you might want to tie up their flowy hairdo with a scrunchie or give them a sweet "puppy cut" to keep fur out of their eyes. They have black and brown button noses, long beards (if their hair is kept long), and slightly longer snouts than similar snub-nosed dogs like the Pekingese.`,
-        breedHighlights: `
-The Lhasa Apso (pronounced "LAH-Suh-AHP-so") is a smart and wilful small dog with a big personality. They're often described as funny, merry, and eager to please. Originating in Tibet, the Lhasa was bred to be a watchdog in palaces and Buddhist monasteries high in the Himalayas. Lhasa comes from the city in Tibet and Apso is a Tibetan word that loosely translates to "dog." This ancestry reveals itself in modern-day Lhasa—they're alert and loyal to their owners, though often wary of strangers.`,
+        breedAppearance: `The Persian is the glamor puss of the cat world. Their beautiful, flowing coat, sweet face and calm personality have combined to make them the most popular cat breed. They are high maintenance and have some health issues, but for many their looks and personality overcome those drawbacks.`,
+        breedHighlights: 'Long hair, docile body, flat nose and watery eyes are the main highlights of this breed. ',
         weight: {
-            from: 5.4,
-            to: 8.2,
+            from: 7,
+            to: 12
         },
         height: {
-            from: 25,
-            to: 28,
-        },
-        litterSize: 8,
-
-        history: `Lhasa apsos have a regal history that begins in 800 B.C. Tibet, when they were bred as sentinel dogs who stood watch inside palaces and Buddhist monasteries high in the Himalayan mountains, according to the ALAC. Legend has it, the brave little Lhasa apsos inspired this ancient Tibetan saying: "If the snow-lion stays in the mountains, it is a snow-lion; if it comes down to the valleys, it becomes a dog."
-        Lhasas have held popular status with Buddhist monks and Dalai Lamas over the centuries—they were never sold, and thus a highly prized gift. Some Tibetian Buddhists believe that the souls of lamas (priests) are reborn as Lhasa apsos in the stage of reincarnation just before they are reborn as humans, according to the ALAC.
-        Lhasa apsos first came to the West in the early 19th century, landing in the U.S. (specifically, New Jersey) in 1933 after being gifted to a couple by the Dalai Lama. The American Kennel Club recognized the breed just two years later, and the ALAC was founded in 1959.`,
-        originally: `The Lhasa Apso dog breed is originally from Tibet, where they were highly regarded watchdogs in the palaces and monasteries of their mountainous homeland.`,
-        currentlyUsedAs: `Today's Lhasa is no longer a palace guard but primarily a family companion who loyally protects their family from danger.`,
-        training: `Lhasa Apsos will please you if it pleases them to please you. They are highly intelligent, sometimes compared to a willful toddlers. They can learn just about anything that a trainer makes interesting enough to master's on their terms. They do not appreciate repetitive drill and can become uncommonly stubborn if bullied or badgered. Most cases of unacceptable Lhasa behaviour involve situations with inconsistent, improper, or non-existent human leadership. This is a breed for creative, motivated people who enjoy a canine companion of like mind.`,
-        healthCare: `The Lhasa apso is a generally healthy breed but can be prone to health problems like hip dysplasia and patellar luxation. According to the American Lhasa Apso Club (ALAC), they may also deal with eye issues like retinal atrophy, pigmentary keratitis, dry eye, and glaucoma.
-Other common health issues for Lhasa apsos include cherry eye (a red mass at the inner corner of the dog's eye), allergies, and a genetic skin condition called sebaceous adenitis, where the sebaceous glands become inflamed. Lhasa apsos can also be susceptible to haemorrhagic gastroenteritis (HGE), a life-threatening disease that can occur in small and medium-sized dog breeds, according to the ALAC. If you catch the warning signs (like bloody diarrhoea) early, the condition can be cured.
-With the right care, Lhasa apsos live long lives—about 12–15 years on average. Some have even been reported to have lived well into their 20s.
-If you buy a Lhasa from a breeder, it's important that they be reputable and dedicated to maintaining healthy animals. The Lhasa apso breeder should be able to show you lineage records that prove their dogs are healthy enough for breeding.`,
-        livingCondition: `Lhasas are loyal to their tribe and do well with adults and children who respect their boundaries. Lhasas can make great family pets—even with small children—as long as the children understand (with the parents' direction) to give the dog some space. If properly socialized and trained, Lhasas can get along with other dogs and pets but know that Lhasa can like to be the boss.
-Lhasas will tolerate being left alone for reasonable periods of time, but think twice if you have neighbours who would be disturbed by any warning barking while you're away. They are not a 'yappy' dog, but with their keen hearing, they will alert you of unexpected events. Their small size might make them seem like ideal apartment dogs, but their bark might prove otherwise.
-Lhasa apsos are quick on their little legs! These pups can excel in agility, where they'll get the exercise and mental stimulation to make them happy. Lhasas need a moderate amount of exercise. A 20-minute walk once or twice a day and some playtime in the house or yard, especially during the puppy stage, will do`,
-        excersie: `The Lhasa is generally not a couch potato and is adept at self-exercise. They will race around an apartment to run off energy, entertain themselves in a fenced yard, or take their owners on a brisk walk. Mental stimulation is as important as physical exercise. They excel at agility, can do scent work, and have been known to retrieve and herd. There are talented Lhasas certified as therapy dogs working in hospitals, nursing homes, colleges, and prisons.`,
-        grooming: `When it comes to grooming, the Lhasa apso is definitely high-maintenance. Though she doesn't shed much, her long and lavish coat can get quite tangled and matted if not cared for correctly—daily brushing and a bi-monthly bath is recommended. Some owners opt to keep their dog's coat short in a "puppy cut" style so that it's easier to maintain, but both hairdos are equally adorable and aww-worthy.
-Lhasas will also need basic grooming every couple of weeks beyond their hair care, including nail trims and teeth brushing. Experts recommend brushing your dog's teeth every day if possible. Just make sure to use dog toothpaste, because human toothpaste is toxic for dogs! Her ears also need to be checked and cleaned regularly.
-Your Lhasa should eat dog food made from high-quality ingredients. Monitoring her food and exercise is an important part of care, preventing your dog from gaining an unhealthy amount of weight. A visit to your vet can help you determine how much and how often to feed your Lhasa to keep her healthy`,
-        pros: [`- Friendly and Affectionate.`, `- Requires Frequent Grooming.`, `- Protective.`],
-        cons: [`- Stubborn.`, `- Excellent Lifespan.`, `- Fragile.`],
-        imageURL: `https://cdn.shopify.com/s/files/1/1199/8502/files/oie_2716152JzzpfzCA.jpg?v=1643295784`,
-    },
-    {
-        breed: `SHIBA INU `,
-        origin: ` Japan`,
-        rating: 4.0,
-        id: 102,
-        lifeExpectancy: {
-            from: 12,
+            from: 10,
             to: 15
         },
-        breedAppearance: `The Shiba Inu is a breed of hunting dog from Japan. A small-to-medium breed, it is the smallest of the six original and distinct spitz breeds of dog native to Japan. A small, alert, and agile dog that copes very well with mountainous terrain and hiking trails, the Shiba Inu was originally bred for hunting.
-        It's not difficult to differentiate between a male and female Shiba Inu, as they have distinct physical and emotional qualities. For starters, males stand up to 16.5 inches tall and weigh about 23 pounds. Females are smaller, standing around 13.5 inches tall and weighing 17 pounds. A male Shiba will have a broader face, while the female has softer facial features. No matter the gender, the Shiba Inu is built like a hunter-quick and agile, with a confident stance. Their perky, triangular ears and fluffy curlicue tail give them the look of a forest animal from a storybook.`,
-        breedHighlights: `The Shiba Inu is a breed of hunting dog from Japan. A small-to-medium breed, it is the smallest of the six original and distinct spitz breeds of dog native to Japan. A small, alert, and agile dog that copes very well with mountainous terrain and hiking trails, the Shiba Inu was originally bred for hunting.`,
+        litterSize: 3 - 6,
+        history: `The Persian is an old breed. Its origination is marked in Mesopotamia which was later called as Persia (modern day Iran).The breed’s long hair was probably the result of a natural mutation, and its striking appearance attracted the attention of 17 th - century Italian nobleman and world traveler Pietro Della Valle, who is credited with bringing the first longhaired cats to Europe in 1626. At that time, the cats had shiny, silky gray fur, but thanks to selective breeding Persians are now found in a kaleidoscope of colors, including bi-color (a color plus white).`,
+        originally: 'Persian cat is one of the oldest known breeds of cat. The early history isn’t entirely known although it is generally accepted that the early cats came from Persia (now Iran) and Turkey. Italian traveler Pietro Della Valle (1586 – 1652) is credited with bringing the first Persian cats back to Europe, arriving in his homeland of Italy in 1620 with them.',
+        currentlyUsedAs: `Persian cats are currently used as pet.`,
+        livingCondition: 'Persian are one of the most domesticated of all cats. They should not be treated as outdoors cats. They gel well with the apartment culture and become vulnerable when exposed to the outside dirt because of their flat nose.',
+        training: `Soft hearted Persians are fussy about rude behavior. Make sure you never yell or fuss. For first few weeks they need extra love, care and attention. Baby talk to the kittens. This will help them socialize and bond with humans. `,
+        healthCare: ' Persians have hereditary health issues that can be a concern. They include polycystic kidney disease (PKD), progressive retinal atrophy (PRA), hypertrophic cardiomyopathy (HCM), bladder stones, cystitis (bladder infections), and liver shunts. Responsible breeders take steps to avoid these problems.',
+        excersie: `Persians being quiet by nature need more motivation for physical activity. They require more interactive toys, like the good old-fashioned ribbon on a string. Spend a few minutes per day playing with them to keep them fit and help maintain yourbond. Few toys like, remote control mice and laser pointers are irresistible so you try it to make them chase.`,
+        grooming: `Persians demand more grooming than any other breed. Their long hair needs regular maintenance- combing, brushing, bathing and clipping. Preciseness of products- shampoo similar to coat’s hair, long nail clipper and soft bristled brush is important in the process of grooming.`,
+        pros: [`Persians are even- tempered and calm by nature. They are adapt well with transfers or additions in family. These cats are mostly quiet and have melodious voice. Usually comfortable indoors.`
+        ],
+        cons: [`Grooming this cat is must. Long hair needs combing on daily basis to prevent matting. Weekly bathing is required to maintain their shiny coat. They are prone to breathing and digestion problems. Persians don’t like to be left alone for long periods, its better if there's another pet living with you too that will provide company when you're not there.`
+        ],
+        imageURL: `https://cdn.shopify.com/s/files/1/1199/8502/files/persian-doll-face.jpg`
+    },
+    {
+        breed: `BENGAL CAT`,
+        origin: `USA`,
+        rating: 5,
+        id: 202,
+        lifeExpectancy: {
+            from: 9,
+            to: 15
+        },
+        breedAppearance:'Bengal cats are a lithe and agile breed and generally weigh between 8–15 pounds. They are prized for their dense, short coats that are boldly patterned in different shades of brown, silver, and snow. Their fur is super soft to the touch, feeling a bit like bunny hair. The most common eye colours found in Bengal cats are brown, yellow, orange, and green.A Bengal cats coat is what sets him apart from all other felines. In fact, Bengals are the only breed that can have rosette markings that directly reflect their wild Asian leopard ancestry. Spotted or marbled coats are also popular and just as gorgeous. Because their fur is so short, they only require a weekly brushing to remove loose hair and dead skin cells.Although Bengal cats weigh about the same as a typical house cat, theyre generally larger in size because of their long, muscular bodies. And their lengthy legs make them excellent jumpers, so do not be surprised if you find your Bengal staring down at you from shelves and countertops. ',
+        breedHighlights:'The Bengal is a domestic cat that has physical features distinctive to the small forest-dwelling wildcats, and with the loving, dependable temperament of a family pet. As such, some characteristics in the appearance of the Bengal are distinct from those found in other domestic cat breeds.',
         weight: {
-            from:6.8,
-            to: 11
+            from: 4.5,
+            to: 6.5
         },
         height: {
             from: 33,
-            to: 43
+            to: 40
         },
-        litterSize: 6,
-        history:`The Shiba Inu is an ancient Japanese breed that has been around since 300 B.C. They are the smallest of Japan's national dogs, called the "Nihon-ken," that consist of six treasured Japanese breeds: the Akita Inu, Hokkaido Inu, Kai Ken, Kishu Ken, Shikoku Ken, and Shiba Inu.
-According to the National Shiba Club of America, these small dogs were originally used to hunt small game and birds, though sometimes they would hunt wild boar. Their name supposedly comes from the reddish brushwood bushes in which they hunted: Shiba means "brushwood" and Inu means "dog."
-During World War II, the number of Shibas declined. The ones who survived the bombing raids in the war caught distemper, a serious disease that can be lethal if untreated. Thankfully, breeding programs were established and the Shiba Inu grew to be Japan's No. 1 companion dog, and the 44th most popular dog in the U.S.`,
-        originally: `The Shiba Inu dog breed was originally bred to flush birds, small game and was occasionally used to hunt wild boar. They’re one of Japan’s six native breeds: Akita (large), Kishu, Hokkaido, Kai, Shikoku (medium), and Shiba (small).`,
-        currentlyUsedAs: `Shibas are known for their spirited personality, small upright ears, and cat-like agility. Today they serve primarily as companion dogs in Japan and the United States.`,
-   training: `The one thing every Shiba owner must know is that a Shiba can never, ever be considered reliable off lead unless in a confined area. No amount of obedience training will ever change that. Letting a Shiba off lead or any dog, for that matter is playing Russian roulette with its life. An open door, an unlocked gate, a moment of inattentiveness, and the Shiba may be gone forever. On the positive side, a Shiba is practically born housebroken. By 4 weeks of age, the puppy is trying to get as far away from his sleeping area as possible to eliminate. By 5 weeks the puppy will hold it all night and wait until taken outside to go. Controlling the bladder takes a little longer and depends a lot on immediate access to the outdoors and the diligence of the owner.`,
-        healthCare: `Shiba Inus have a life expectancy of 12-15 years, and it's generally a healthy, happy ride. This breed is known for dramatics and may talk, scream, or throw a bit of a temper tantrum if things don't go their way. All jokes aside, a responsible owner must be diligent in preventing certain health issues for their Shiba. Obesity and dental disease are big risks for Shibas, so proper nutrition and dental hygiene are a must. Their genetic problems can include hip dysplasia, patellar luxation, and allergies. Owners should closely monitor any symptoms of these conditions and alert their veterinarian if they notice anything out of the ordinary. Before bringing home a Shiba Inu puppy, make sure the breeder conducts the tests recommended by the OFA to ensure you get a healthy dog.
-With their thick double coats, Shibas are big shedders. Their heaviest periods of shedding are in the spring and fall, but they lose fur year-round and will need to be brushed regularly if the owner wants to save their furniture. You can also use a blow dryer to check for fleas and remove loose hair, dirt, and dandruff. Shibas are notoriously less-than-happy about nail-trimming, so unless they have an experienced owner, they may need to see a professional to keep their nails short and neat. A Shiba needs a moderate amount of exercise before he can calm down. They make great hiking companions, thanks to their history as hunters (and their natural winter coat). Of course, they'll need to be leash trained before they can consistently go for walks. Shibas typically house-train quickly and are perceptive to learning commands, but may need obedience classes-such as puppy kindergarten-to fully grasp good manners`,
-        livingCondition: `Shiba Inus might be a small dog breed, but they need a fenced-in yard with space to roam-emphasis on the fence. They have a strong dislike for being restrained, and if there isn't a limit to where they can explore, they will wander off. They've also been described as escape artists, so a Shiba should always have a collar with tags and shouldn't be left to his own devices outdoors for a long period of time. Shibas can also tend to dart after smaller animals in an effort to protect their turf. They have a high prey drive and love to chase, thanks to their hunting roots. Because of this, a Shiba should always be leashed outside the house.
-As with all dogs, Shibas need to be socialized at a young age so they're used to being around other animals. They can get along well with cats and other dogs if introduced during puppyhood, but might not want to share their food and toys if they don't meet their furry siblings until they are adults.`,
-        excersie: `Most Shibas are fairly energetic and love to go for walks. They are not so hyper that they will climb the walls if they don't get daily exercise, but a Shiba owner should be dedicated to exercising the dog, especially if the dog doesn't have an adequate yard in which to exercise himself. In general, Shibas are not massively destructive if left alone once they reach maturity, but some can suffer separation anxiety and should be able to spend periods of time created even when the owners are home and at night. Crating guarantees a home will remain intact`,
-        grooming: `Shibas shed a lot. It has been said that they shed twice a year, but some owners quip that it lasts for six months at a time. Unless a Shiba is a "long coat," the coat does not mat, so infrequent brushing doesn't hurt the dog, but brushing or combing during periods of heavy shedding will reduce the amount of hair around the house. Blowing the dog with a strong blow-dryer or a shop vacuum in reverse is a good way to remove loose hair, dirt, and dandruff and to check for fleas. Most dogs learn to like the blower, as it feels good and doesn't scrape the skin or pull the coat. Don't let it get too hot, though. Shibas often object to nail trimming. Start a puppy early, but if it becomes a major struggle, let a professional do it.`,
-     pros: [`- Their Natural Beauty`,
-                `- Their Loyalty`,
-                `- Their Health `,
-                `- Their Intelligence`,
-               `- Their Fastidious Nature.`
+        litterSize: 3-6,
+        history: `Although crosses between Asian leopard cats and domestic cats occurred as early as the 1800s, the breed didn't really come into its own until the mid-20th century. Breeder and conservationist Jean Mill first crossed a domestic cat with an Asian leopard cat in 1963, according to the Cat Fanciers' Association. By 1996, Bengals were registered by the CFA. The accepted animals come from the F6 generation or higher.
+        Of course, when you consider their warm, intelligent personalities and eye-popping coat colours and patterns, it's no surprise that they have quickly become one of the most popular breeds in the world, outpacing cats that have been around for generations.`,
+        originally: 'USA',
+        currentlyUsedAs: `Bengals are very entertaining and affectionate. They make great pets, but you have to be prepared for their playful personality and incredible intelligence. Like their ancestors, Bengal cats are very active creatures. They are energetic and require entertainment. If these cats do not get the action they need, they may damage household items and furniture.
+        A Bengal cat with a tabby-pattern coat carrying a cat toy. Bengals are also known as avid thieves. They often steal and hide items they find intriguing (imagine jewellery, coins, keys). On top of this, most Bengals love splashing in the water and playing with paper, so keep important documents locked and offer lots of toys to keep them busy.
+        Overall, Bengal cats are confident, curious, and happy. They are no more aggressive than the average domestic cat, and, as with all cats, their temperament can be moulded with training. They are also friendly and loving, and it’s not unusual for them to develop great loyalty to a single family member.`,
+        livingCondition:'A Bengal cat is happiest when he is near you. He does not care where he lives, whether it be a big house or small apartment, as long as you and your family are nearby. But no matter the size of your space, a Bengal needs to have lots of things to do—and climb.Owners should have at least one cat tree for this big kitty, along with plenty of toys to keep him entertained while you are away. And if you spend long hours away from home, having a second cat is a good idea to help keep your pet amused and busy. Bengal cats also have a high prey drive and enjoy watching birds, squirrels, and other animals from safely inside your home. Because of his love of chattering at the window, it is a great idea to install a carpeted perch (or two) to give him a comfortable viewing spot. Bengals are active and intelligent cats. To keep him happy and healthy, you need to give him ample mental and physical stimulation. Just try not to leave breakable items on a shelf or mantel that your Bengal can reach. Remember: This breed is super agile, so it is inevitable your cat will eventually explore every high-up spot he can reach. So, if you are proud of your Faberge egg collection, secure them someplace where your cat can not knock them over. Installing cat shelves in your home could help keep him away from your breakables, too! And although they are not considered couch potatoes, Bengals will curl up on your lap for a good snooze after a busy day of chasing toy mice.',
+        training: `Bengal cats are easier to train than most cat breeds. They are considered to be one of the smartest cat breeds. With time and consistency, they can learn tricks and develop certain behaviours. The effort involved to train your cat will depend on his or her personality and their interest level in the activity.`,
+        healthCare:' Your Bengal cat will need all of the same immunizations and preventative health treatments as a domestic cat. They are not as immune to the feline leukaemia virus as their ALC ancestor is. Purebred cat breeds are more prone to genetic diseases than mixed breed domestic cats due to the fact that the gene population that they come from is smaller. As most Bengal cats today are several generations removed from the African leopard cat, they require no special care. They are simply larger "house cats." You should groom your cat with weekly combing to remove the dead hair and help prevent hairballs. Trim your cats nails every couple of weeks and provide a scratching post. Provide a clean and fresh litter box as any cat is bound to start refusing to use a dirty, smelly one.Bengal cats are active and you should provide a climbing tree and opportunities for your cat to find a perch to survey the room. Provide interactive toys to engage your cat. Spend time playing together; you can train your cat to fetch and "catch the laser dot."Bengal cats are known to love water, a trait that most house cats do not possess. You may have to be careful that your aquarium does not become a fishing pond. As with any cat, a Bengal cat is best kept as an indoors-only cat. That protects them from catching diseases from other animals, getting into fights, being attacked by predators, or being hit by vehicles. This breed should get along well with dogs and other cats. However, if you have gerbils, hamsters, or guinea pigs you may find them being stalked by your cat. It is best to keep cats separate from their natural prey.',
+        excersie: `Bengals love to run and play and especially to climb up high. A tall scratching post especially with perches at the top is a very good addition to a home with a Bengal. 
+        A cat wheel such as the one made by one fast cat will help your Bengal get most of the exercise that they need. With very little training they usually take right to it! It's so much fun to watch them walking and running full speed on the wheel. We find the exercise wheel made by one fast cat to be a nice quiet wheel relative to others we have purchased and it literally took less than ten minutes of play with our Bengal Girls to get them up and running.  From there it is just a matter of any new Kitten or cat watching others play and on and on it goes with no further training required in many cases.`,
+        grooming: `The Bengal cat's short glossy coat does not require excessive grooming but they will enjoy the attention gained from being groomed. As with most shorthair breeds, Bengal cats look after their coat very well. As with all cats, this breed needs regular vaccinations, parasite control and annual health checks.`,
+        pros: [`Highly affectionate.
+                Are inquisitive and intelligent.
+                Love going on walks.`
         ],
-        cons: [`- Their Aloofness `,
-                `- Their Stubbornness`,
-                `- Their Tantrums`,
-                `- Their Shedding`,
-                `- Their Risk of Running Away.`
+        cons: [`Can get lonely.
+                Love to scratch and make mischief.
+                Get bored easily.`
         ],
-        imageURL: `https://cdn.shopify.com/s/files/1/1199/8502/files/Shiba-Inu-Display-Image.jpg?v=1643203060`
-    
+        imageURL: `https://cdn.shopify.com/s/files/1/1199/8502/files/Bengal_Cat_in.jpg?v=1646365765`
 },
 {
-    breed: `BEAGLE `,
-    origin: `United Kingdom `,
+    breed: `AMERICAN BOBTAIL`,
+  
+    origin: `USA`,
+    rating: 5,
+    id: 206,
+    lifeExpectancy: {
+        from: 11,
+        to: 15
+    },
+    breedAppearance:'Most notably, these cats have a shortened tail which averages between 1-4 inches in length. Their tails can also appear to be straight, slightly curved, kinked, or bumpy along the sides. The American Bobtails striking appearance makes them look as though they are wild.',
+    breedHighlights:'American bobtail cats are known for their wild appearance and short bobbed tails. This cat breed is a loving, playful pet.',
+    weight: {
+        from: 7,
+        to: 16
+    },
+    height: {
+        from: 9,
+        to: 10
+    },
+    litterSize: 5,
+    history: 'The American Bobtail is an uncommon breed of domestic cat which was developed in the late 1960s.Urban legend says that Bobtails are the result of a cross breeding between a domestic tabby cat and a wild bobcat. The unusual tail is actually the result of a random spontaneous genetic mutation within the domestic cat population, and may be related to the Manx gene, which is also dominant. Yodie, a short-tailed brown tabby male, was mated with a seal-point Siamese female to create the American Bobtails original bloodline. Most of the early bloodlines have died out.This cats original appearance genetics were modified in the breed to form a new and improved strain which comes in essentially all colors and coat types. The breed was first recognized by The International Cat Association (TICA, US-based), in 1989. The breed has been accepted for championship competition by TICA, the Cat Fanciers Association (CFA, also US-based)[3] and the American Cat Fanciers Association (ACFA).[4][5] The breed is technically also sanctioned in the Cat Aficionado Association (CAA) of China, by virtue of the CAA having adopted all of ACFAs breed standards; it is unknown if any specimens are actually in China. The breed is "recognized" (as existing), as both American Bobtail Longhair and American Bobtail Shorthair, in the Germany-based World Cat Federation (WCF), but is not "accepted" for competition[6] and has no WCF breed standard.',
+    originally: 'The American Bobtail is an uncommon breed of domestic cat which was developed in the late 1960s. It is most notable for its stubby "bobbed" tail about one-third to one-half the length of a normal cats tail.',
+    currentlyUsedAs: 'American Bobtail is currently used as a pet.',
+    livingCondition:'American bobtails love to be loved and have tons of love to give in return. These sweet cats need lots of human interaction and do not do well when left alone for long periods of time. Busy families be aware: Your bobtail will need constant affection. But if you spend a lot of time on the road, the American bobtail travels well and makes an excellent traveling companion. These social cats get along with pretty much everyone and do not mind homes with frequent visitors. In fact, they will probably bolt to the door to greet guests before you do! Because they crave interaction, they will try to make friends with just about anyone—you will need to keep an eye on your American bobtail to make sure he does not head outside for a meet and greet with less-friendly animals and people. To satisfy your kittys curious nature and social needs, you can leash-train him and take him on strolls around the neighborhood.',
+    training: `Owing to their superior intelligence and willingness to please, American Bobtails are a lot easier to train than most other cats. However, it is best to start training them when they are still kittens, especially when it comes to leash training.
+    Bobtails will not give you any problems when it comes to litter box training.`,
+    healthCare:'Bobtails are prone to hip dysplasia, a hereditary disease that has the potential to cause crippling, lameness and arthritis of the hip joints. Although generally healthy cats, some bobtail cats are born without tails. Bobtail cats without tails are known as “rumpies”.',
+    excersie: `American Bobtails are a fairly energetic breed. As such, it is crucial that you provide them with an outlet for releasing that energy to not allow them to stay in shape, but also to prevent the development of destructive behaviors.
+    Fortunately, thanks to their willingness to interact with their humans, Bobtails are much easier to exercise than most cat breeds. Like dogs, the American Bobtail enjoys walks. Therefore, make sure that you leash-train them early so that they can be comfortable wearing one.
+    Other ways to exercise your Bobtail include playing games such as ball chasing, fetch, and making them hunt a toy attached to a string. Make sure to leave toys around the house so that the cat can play by themselves when you are not around.
+    In addition to physical exercise, this intelligent animal requires mental stimulation as well. Therefore, invest in puzzle toys such as treat prize games and food mazes to keep them occupied for extended periods at a time.`,
+    grooming: `Thanks to their short coats, the American Bobtail does not require as much care as other cats do. Occasional brushing, at least once a week, should be enough to help them shed and maintain a healthy coat.
+    Make sure that you trim nails at least once a month, as long claws can affect their ability to walk comfortably. Therefore, in the same light, ensure that you have a scratching post in the house so the cat can trim its nails naturally.
+    Every couple of weeks, clean their ears, as they are a hotbed for infections. To clean, dip a piece of cotton wool in a cat cleaner solution, and then dab the inside of the ear gently to remove any debris.`,
+    pros: ['American Bobtail cats are self-assured, intelligent, active, and sociable. These qualities make them great companions and suitable for families of all ages. American Bobtails are said to be very social cats and will generally get along with other pets, including cats if introduced early.'
+],
+    cons: [`Bobtails are prone to hip dysplasia, a hereditary disease that has the potential to cause crippling, lameness and arthritis of the hip joints.`
+],
+    imageURL: `https://www.petsworld.in/blog/wp-content/uploads/2014/07/American-Bobtail1.jpg`
+},
+{
+    breed: `AMERICAN CURL`,
+    origin: `USA`,
+    rating: 5.5,
+    id: 205,
+    lifeExpectancy: {
+        from: 13,
+        to: 15
+    },
+    breedAppearance:'The American Curl has medium-sized bones so she is not a delicate cat despite the length of the body. The head of the American Curl is wedge shaped with eyes that are shaped like a walnut. Her tail is long. Her unique feature, of course, is that her ears curl backwards.',
+    breedHighlights:'The head of the American Curl is wedge shaped with eyes that are shaped like a walnut. Her tail is long. Her unique feature, of course, is that her ears curl backwards. Her ears are large, and curve in a smooth arc of at least 90 degrees.',
+    weight: {
+        from: 8,
+        to: 12
+    },
+    height: {
+        from: 9,
+        to: 12
+    },
+    litterSize: 5,
+    history: 'The first American Curls appeared as strays on the door step of the Rugas in Lakewood, California in June 1981.The black female, named Shulamith, gave birth to a litter of cats with the same curled ears, and so became the ancestor of all American Curls today.In 1986, an American Curl was exhibited at a cat show for the first time, and in 1992, the longhaired American Curl was given championship status by The International Cat Association (TICA). In 1999, the American Curl became the first breed admitted to the Cat Fanciers Association (CFA) Championship Class with both longhair and shorthair divisions.',
+    originally: 'The first American Curls appeared as strays on the door step of the Rugas in Lakewood, California in June 1981. The black female, named Shulamith, gave birth to a litter of cats with the same curled ears, and so became the ancestor of all American Curls today.',
+    currentlyUsedAs: 'American curl is currently used as a pet.',
+    livingCondition:'When not curling up with his humans, the American curl appreciates a quiet place to nap on his own. Curls have been known to commandeer salad bowls, boxes, and milk crates for slumbering, especially any left in a lofty position. But you should give him his own cat bed, hammock, and other comfy spaces that are just for him. American curls are highly adaptable cats, Gerken says, and do great with seniors, first-time cat parents, and families with children. In fact, the American curl is one of the few cat breeds that seem to seek out children and enjoys play sessions with them, according to the CFA. However, Gerken says very small children should be supervised and taught how to interact with pets. Make sure they know to not play with the American curls delicate ears!',
+    training: `Because American curls are intelligent cats, pet parents are encouraged to teach them tricks," Gerken says. "Training cats is not just a fun way to show-off to visitors to the home, but is great mental stimulation for the cats too.`,
+    healthCare:'The American Curl is well regarded for its health, hardiness and adaptability. With no known genetic defects or predispositions to physical ailments, it rarely gets ill. Kittens also have a strong immune system and respond well to immunization shots. ',
+    excersie: `The American Curl enjoys daily exercise. They relish cat trees in the house with perches for climbing and jumping. If they are provided with enough exercise space, they tend to maintain their weight rather well. They also like interactive play. While not considered a "lap cat," the Curl likes to be next to people.`,
+    grooming: `A longhaired Curl should be combed twice a week to prevent or remove mats and tangles. The only other grooming the American Curl needs is regular nail trimming, usually weekly. Brush the teeth frequently with a vet-approved pet toothpaste for good overall health and fresh breath.`,
+    pros:['American Curls are friendly, affectionate, and docile cats that love to bond with their owners. The American Curl is a joyous cat. He loves to play, even well into old age.'
+],
+    cons: [`Due to the unique shape of the American Curl's ears, some may be born with narrowed ear canals. These narrowed canals can trap wax, which can lead to ongoing ear infections.`
+],
+    imageURL: `https://www.petsworld.in/blog/wp-content/uploads/2014/07/American-Curl.jpg`
+},
+{
+    breed: `BURMESE CAT`,
+    origin: `Thailand`,
+    rating: 3.5,
+    id: 203,
+    lifeExpectancy: {
+        from: 10,
+        to: 17
+    },
+    breedAppearance:'The Burmese is a cat that is round all over. The head is round, the tips of the ears are round, the eyes, chin and even the feet are round. This breed is solid both in looks and in feel and has great strength. The coat of the Burmese is short and glossy.',
+    breedHighlights:'The Burmese is highly intelligent, affectionate and extremely loyal. They love being with people, but also gets along well with other cats and even dogs. One of their most endearing qualities is that they love to perform tricks.',
+    weight: {
+        from: 8,
+        to: 12
+    },
+    height: {
+        from: 9,
+        to: 13
+    },
+    litterSize: 6-8,
+    history: `The Burmese cat is a breed of domestic cat, originating in Burma, believed to have its roots near the Thai-Burma border and developed in the United States and Britain.
+    Most modern Burmese are descendants of one female cat called Wong Mau, which was brought from Burma to America in 1930 and bred with American Siamese. From there, American and British breeders developed distinctly different Burmese breed standards, which is unusual among pedigreed domestic cats. Most modern cat registries do not formally recognize the two as separate breeds, but those that do refer to the British type as the European Burmese.
+    Originally, all Burmese cats were dark brown (sable), but are now available in a wide variety of colours; formal recognition of these also varies by standard. Both versions of the breed are known for their uniquely social and playful temperament and persistent vocalization.`,
+    originally: 'Myanmar, Thailand',
+    currentlyUsedAs: 'Burmese cats are loving, playful, and highly social. Expressing a number of tendencies that have been described as "dog-like," Burmese tend to develop strong loyalty bonds with their humans and have been described as a "Velcro cat," wanting to spend as much time as possible around their people.',
+    livingCondition:'Whether they are playing or just sitting on the couch, the biggest factor in having a happy Burmese is going to be proximity to you. They develop loyalty bonds quickly and want to be wherever you are. If your lap is empty, your Burmese will happily climb into it to snooze, says M. Leanne Lilly, DVM, DACVB, assistant professor-clinical at the Ohio State University Veterinary Medical Center.Along with your lap, Lilly also says Burmese cats are more likely to favor sleeping in warm, elevated areas. So if you bring home a Burmese kitten, make sure you have a cat tree and a hammock for her to curl up in. But don ot expect this breed to spend all her time asleep.',
+    training: `If you harness train her, she'll be your best adventure buddy. Cat toys that mimic mice and birds will make your Burmese purr. With an almost doglike personality, the Burmese can be taught to retrieve. This breed is good with children and tolerates cat friendly dogs. Having a short, satinlike coat and compact body, this cat has large, expressive eyes that are one of the breed's endearing traits.`,
+    healthCare:'With an almost doglike personality, the Burmese can be taught to retrieve. This breed is good with children and tolerates cat friendly dogs. Having a short, satinlike coat and compact body, this cat has large, expressive eyes that are one of the breeds endearing traits.Their super short coats and relative lack of shedding make the Burmese a breeze to groom. Brushing and bathing should be virtually nonexistent, save for a little combing during traditional shedding seasons in the spring and fall, but even those times should be fairly light. ',
+    excersie: `The Burmese cat breed needs daily exercise combined with plenty of mental stimulation through active play and interaction with people. Cat parents can use cat toys like the Mousr or Cat Dancer to get their cats to play. This will encourage your cat to play.`,
+    grooming: `The silky coat of the Burmese does not shed much and is easy to groom with weekly brushing. The only other grooming requires is regular nail trimming and ear cleaning. The Burmese is well suited to any home with people who will love him and give him the attention and love he desires.`,
+    pros: ['Very active, Learns Tricks, Long life expectancy, Gets along well with other cats and dogs.'
+    ],
+    cons: [`They are not loners.
+            Prone to asthma,
+            sinus problems and
+            dental issues.`
+    ],
+    imageURL: `https://www.petsworld.in/blog/wp-content/uploads/2014/07/Burmese-Cat.jpg`
+},
+{
+    breed: `CALIFORNIA SPANGLE`,
+
+    origin: `California`,
+    rating: 2.5,
+    id: 209,
+    lifeExpectancy: {
+        from: 9,
+        to: 16
+    },
+    breedAppearance:'The California Spangled is a breed of domestic cat that was bred to resemble spotted wild cats, like the ocelot and leopard. They were usually expensive, priced between US$800 and $2,500. The popularity of two other spotted cats breeds, the Ocicat and the Bengal, overshadowed their development.',
+    breedHighlights:'The California Spangled Cat is energetic, active, and, though it sports a wild look, easy to tame. Affectionate and intelligent, it will return its owners love in full measure, though it will also scheme to get its way. A born athlete, the California Spangled Cat is capable of acrobatic high jumps.',
+    weight: {
+        from: 8,
+        to: 15
+    },
+    height: {
+        from: 8,
+        to: 10
+    },
+    litterSize: 4,
+    history: 'Originally bred by Paul Arnold Casey, Jr., a Hollywood scriptwriter, playwright, and author, after his return from Tanzania while working with Louis Leakey in the 1970s. Caseys novel, "Open The Coffin" chronicles his journey in Africa and subsequent breeding that led to the California Spangle.This animal was ideally bred to resemble a leopard, thus giving the impression of a "House-Leopard". One of many motivations for this breed was that people would not want to wear the same type of fur that resembled their pet.The Spangle was introduced to the general public on the cover of the iconic Neiman Marcus Christmas catalog in 1986.',
+    originally: 'California',
+    currentlyUsedAs: 'The California Spangled is a breed of domestic cat that was bred to resemble spotted wild cats, like the ocelot and leopard. Its is currently used as a pet.',
+    livingCondition:'California Spangled cats adapt well to life as an only pet, because they are independent by nature. They are a strong breed and because of this have no known hereditary health problems. Their short short sleek coat is easy to maintain and weekly grooming will keep it in good condition.',
+    training: `The high intelligence of the California Spangled cat makes the breed easy to train if that’s something that owners are interested in doing. These cats can be taught to retrieve items, clean up toys, and even verbally communicate on command. That said, training cats, no matter how smart they happen to be, requires patience and commitment. After all, cats have a stubborn side and only cooperate when they feel like it.
+    If possible, work with a cat training professional for a few days to get a clear understanding of how training sessions should be done and to learn about techniques and tactics that you can use to optimize each session based on your cat’s specific personality and level of interest.`,
+    healthCare:'California Spangleds are generally considered to be healthy cats; although, it is important to schedule regular wellness visits with your cats vet.There are not any breed-specific health problems associated with the California Spangled, but always keep an eye out for signs that your cat might be in distress or pain. The California Spangled is always going to be ready and willing to embark on a play session or explore the highest parts of their environment. So, as a responsible guardian, you will need to first make sure that their home is spacious enough and well equipped to satisfy the mixed breeds exercise needs.A cat tree is a must--or if you have the room, feline-friendly shelving that the cat can climb and jump between is ideal. If you have the option of adding a secure catio to your home, the California Spangled will love the chance to be safely outside!Along with scheduling yearly wellness vet visits, your California Spangled will need to have their nails checked and trimmed on a regular basis. If you are new to cat adoption, your vet can show you the safest way to carry this out. Adding a scratching post to your living environment can also help promote healthy scratching and keep the cats nails in good condition.Beyond nail care, examine the California Spangleds ears for signs of dirt building up or possible infection every couple of weeks.It is also advisable to talk with your vet about starting a regular teeth brushing regimen that will suit your California Spangled.',
+    excersie: `Due to the California Spangled cat’s active nature, this breed needs to get exercise through playing and exploring during the day. Human companions can interact with their cats by using toys like balls, feathers, and strings for extra exercise and stimulation when necessary. Scratching posts, climbing trees, and play tunnels can all help keep this breed in good physical and mental health.
+    Introducing another cat to the household is a great way to make sure your pets get the exercise that they need, as they will have a companion to play with when the humans are away from the house. You will likely witness your California Spangled cat playfully chase your other kitty around the house.`,
+    grooming: `The California Spangled Cat is a shorthaired breed, so there is no need to worry about matting or tangles. A quick combing or brushing twice a week is all that should be needed to keep this cat's coat looking clean, shiny, and dander-free.`,
+    pros:['California Spangled cats are practiculating affectionate, highly intelligent, very energetic and playful, hypoallergenic and are not aggressive.'
+],
+    cons: [`Yet, despite its wild-looking appearance, the cat is extremely docile—preferring the companionship of family and often seeking attention and affection.`
+],
+    imageURL: `https://www.petsworld.in/blog/wp-content/uploads/2014/07/California-Spangled-Cat.jpg`
+},
+{
+    breed: `MAINE COON`,
+    origin: `USA`,
     rating: 4.5,
-    id: 103,
+    id: 207,
     lifeExpectancy: {
         from: 12,
         to: 15
     },
-    breedAppearance: `The Shiba Inu is a breed of hunting dog from Japan. A small-to-medium breed, it is the smallest of the six original and distinct spitz breeds of dog native to Japan. A small, alert, and agile dog that copes very well with mountainous terrain and hiking trails, the Shiba Inu was originally bred for hunting.
-    It's not difficultBeing small, compact, and robust, Beagles are active companions
-for kids and adults alike. to differentiate between a male and female Shiba Inu, as they have distinct physical and emotional qualities. For starters, males stand up to 16.5 inches tall and weigh about 23 pounds. Females are smaller, standing around 13.5 inches tall and weighing 17 pounds. A male Shiba will have a broader face, while the female has softer facial features. No matter the gender, the Shiba Inu is built like a hunter-quick and agile, with a confident stance. Their perky, triangular ears and fluffy curlicue tail give them the look of a forest animal from a storybook.`,
-    breedHighlights: ``,
+    breedAppearance:'The Maine Coon is a large and sociable cat, hence its nickname, "the gentle giant." It is characterized by a prominent ruff along its chest, robust bone structure, rectangular body shape, an uneven two-layered coat with longer guard hairs over a silky satin undercoat, and a long, bushy tail.',
+    breedHighlights:'She is a calm and affectionate gentle giant. The Maine Coon is known for its large size and thick double coat of long hair which is well suited for the harsh winters in Maine, the state from which they originated. Relaxed and laid-back, Maine Coons are not overly dependent, but they are people oriented.',
     weight: {
-        from:10,
-        to: 11
+        from: 3.6,
+        to: 8.2
     },
     height: {
-        from: 33,
-        to: 41
+        from: 10,
+        to: 16
     },
-    litterSize: 7,
-    history:`The roots of the dogs having the same size and purpose as themodern Beagle can be traced to Ancient Greece of the 5th century BC. Xenophon, born around 430 BC, in his Treatise on Hunting or Cynegeticus, alludes to a hound that hunted hares by scent and chased them on foot. Small hounds find mention in the Forest Laws of Canute, which exempted them from the ordinance that commanded that all dogs capable of running down a stag should have one foot mutilated. However, there are divergent opinions regarding the time of existence of such laws. If they indeed existed in practice, they lend weight to the fact that such dogs were prevalent in England prior to 1016.`,
-    originally:` The Beagles date back to the 1500s. English hunters have a tendency of using these dogs profusely for the purpose of tracking rabbits, hares, pheasants, quails and other small animals. The breed probably originated as a cross between the Harrier and other types of English hounds.`,
-    currentlyUsedAs: `Beagles are currently employed as scent hounds to mostly track animals, like rabbits and hares. Dogs of this breed are utilized for this purpose in numerous countries, including the USA.`,
-    training: `Dealing with Beagles can be a Herculean task at times. This is because their attitude makes training a real nuisance. Therefore, it takes plenty of tenacity and resolve to train the Beagles.`,
-    healthCare: `Some dogs of this breed can be susceptible to a multitude of diseases, including epilepsy, heart disease, eye and back problems, chondroplasia, popularly termed as dwarfism (warped front legs, like a Basset's), mast cell tumors, etc.`,
-    livingCondition:`Beagles can live pleasantly in an apartment if they are not provided with ample opportunities to roam outdoors. They tend to stay vibrant indoors, and a small yard will suffice.`,
-    excersie: `Being endowed with qualities of dynamism and stamina, lots of exercise, including a brisk daily walk, is a prerequisite for the Beagle. There should have a fenced yard of reasonable size for romping the breed. Always use a lead when taking this breed out for a walk or you may lose track of the swift-legged dog very quickly.`,
-    grooming: `Nurturing the Beagle's smooth, shorthaired coat is no different from having a walk in the park. Brush it with a firm bristle brush, and bathe it with mild soap only when the need arises. Dry shampoo occasionally. Be sure to check the ears carefully for signs of infection and keep the nails trimmed. This breed is an average shedder.`,
- pros: [ 
-     `Beagles are quite capable of fetching and returning a variety of items, like balls and plush toys. They are an intelligent breed, and when trained as pups, can be rendered disciplined and mannerly. Beagles have the potential of learning and understanding pet owners' commands, if trained at an early age or taken to attend some obedience classes. They are also known for mixing and mingling with children, other dogs and even cats, if acquainted early. They are frisky, and easy to maintain, clean and groom. Since it is a neat and tidy breed, it necessitates an occasional bathing and brushing at times.`
-    ],
-    cons: [
-    `As they have a penchant for digging and chewing on things, pet owners need to distract the dog by buying chewable toys and bones for the beagles or they could run the risk of having their own personal items chewed and buried. Absent-mindedness and inattentiveness of a beagle makes it a headache to train it. As a result, pet owners must repeat dog commands and demands quite a number of times before it becomes an obedient dog. Furthermore, beagles howl very loud, and they learn this kind of barking, a part and parcel of their hunting activities, when they are pups..`
-    ],
-    imageURL:` https://cdn.shopify.com/s/files/1/1199/8502/files/33_2048x2048.jpg?1140046362213161000`
-
+    litterSize: 4-5,
+    history: 'The Maine Coon is one of the largest domesticated cats. It has a distinctive physical appearance and valuable hunting skills. The breed was popular in cat shows in the late 19th century, but its existence became threatened when long-haired breeds from overseas were introduced in the early 20th century.The ancestral origins of the Maine Coon are unknown,some speculate that they are descended from Norwegian forest cats or Siberian forest cats, which may have been brought to New England by settlers.',
+    originally: 'It is one of the oldest natural breeds in North America. The breed originated in the U.S. state of Maine, where it is the official state cat. The breed was popular in cat shows in the late 19th century, but its existence became threatened when long-haired breeds from overseas were introduced in the early 20th century.',
+    currentlyUsedAs: 'Maine Coonis currently used as a pets.',
+    livingCondition:'Maine Coons can adapt to any type of home in any climate and, although they are built for outdoor living, it is safer to keep them inside so they do not get hit by cars or run the risk of disease spread by cats. ',
+    training: `There are a variety of ways to train a Maine Coon cat, but every method involves patience and persistence. You should set up a schedule to train your Maine Coon daily or every other day. Avoid using negative reinforcements or punishments, as cats learn best through positive reinforcement, such as praise or treats.`,
+    healthCare:'Even though Maine Coon cats are considered a hardy breed, there are some hereditary health issues they are prone to. They include hypertrophic cardiomyopathy, hip dysplasia and spinal muscular atrophy.',
+    excersie: `Maine coons don't have any special exercise needs—they'll keep the same activity schedule of most cats, with long hours of sleep and playful bouts of jumping and running through the house. Cat toys and cat trees can help them work out some of that energy. These super-intelligent cats are easily trainable.`,
+    grooming: `To groom your Maine Coon cat, start by combing it from head to tail with a steel comb. Then, brush the fur upwards with a bristle brush to get rid of any dead fur from both layers of its coat. Additionally, use scissors to cut out any mats you can't brush out.`,
+    pros: ['Maine Coon cats are an intelligent breed of cats. They are naturally curious. Because of this, some owners have successfully taught their Maine Coon to do tricks. If you want a loyal cat, then a Maine Coon is a great choice. They treat everyone in their household as their family. Maine Coon cats are also wonderful with children and other pets.Don’t let their luscious coat intimidate you. Maine Coon cats are typically easier to groom than other long-haired cats. They are also relatively healthy cats. They are active and playful. Maine Coon cats are excellent mousers. They enjoy hunting and chasing. There will be lots of fun times with a Maine Coon cat!'
+],
+    cons: [`As mentioned, Maine Coon cats are a strong and healthy breed. However, there are some possible hereditary or genetic health issues. It is important to be cautious about whom you buy or adopt your Maine Coon from. Make sure to find a reputable breeder. Being aware of these possible health issues would help you with your buying choices and on how you would care your Maine Coon. Some of these health concerns are hip dysplasia and hypertrophic cardiomyopathy. The Maine Coon cat’s size may be a factor for the predisposition to hip dysplasia. Male Maine Coon cats can grow up to 15-25lbs. HCM or hypertrophic cardiomyopathy, on the other hand, is the most common form of heart disease and may affect middle to old age Maine Coon cats.
+    While there may be some areas of concern, Maine Coon cats are surely lovable. There will be so many owners and enthusiasts that can tell you that it’s worth it to welcome this gentle giant into your home.`
+],
+    imageURL: `https://www.petsworld.in/blog/wp-content/uploads/2014/07/Maine-Coon.jpg`
 },
 {
-    breed: `BOXER`,
-    origin: `Germany `,
-    rating: 4.4,
-    id: 104,
+    breed: `SCOTTISH FOLD`,
+    origin: `Scotland`,
+    rating: 4,
+    id: 204,
     lifeExpectancy: {
-        from: 9,
-        to: 10
+        from: 11,
+        to: 15
     },
-    breedAppearance: `The Boxer's body is compact and sturdy. The size of the head is in proportion to that of the body. The muzzle is short and blunt with a distinct stop. The nose is large and black with very open nostrils. The jaw has an under bite. The eyes are dark brown in color. The ears are set high, either cropped or kept natural. When cropped, they are trained to stand up on the head, tapering to a point. When left in their natural form, the ears are thin, falling forward, lying close to the head. The neck should be round, strong and muscular, without a dewlap. The muscular front legs seem to be straight and parallel when viewed from the front. The back legs are muscular. The tail is set high and usually docked. The AKC severely penalizes a natural tail, while most of Europe has outlawed this practice. Dewclaws are usually removed. The short, smooth, close-fitting coat comes in fawn, brindle, tan, mahogany and black often with white markings. Boxers with a white coat cannot be registered with some clubs.`,
-    breedHighlights: `Boxers are known for bursting with energy and plenty of exercise is a prerequisite for them. You should have the time, resolve, and vigour to give them the play and activity they need. Boxers are exuberant and will greet you ecstatically.`,
+    breedAppearance:'The Scottish Fold is a medium-sized cat with medium sized boning. She is a very round looking cat. The head is round and the folded ears heighten that illusion of roundness. The eyes are very round, bright and clear.',
+    breedHighlights:'The nose is short with a gentle curve, and the cats body is well-rounded with a padded look and medium-to-short legs. The head is domed at the top, and the neck very short. The broadly-spaced eyes give the Scottish Fold a "sweet expression". The scottish folds ears are folded hence the name "Scottish Fold".',
     weight: {
-        from:25,
-        to: 32
+        from: 6,
+        to: 13
     },
     height: {
-        from: 57,
-        to: 63
+        from: 8,
+        to: 10
     },
-    litterSize:8, 
-    history:`The roots of the dogs having the same size and purpose as themodern Beagle can be traced to Ancient Greece of the 5th century BC. Xenophon, born around 430 BC, in his Treatise on Hunting or Cynegeticus, alludes to a hound that hunted hares by scent and chased them on foot. Small hounds find mention in the Forest Laws of Canute, which exempted them from the ordinance that commanded that all dogs capable of running down a stag should have one foot mutilated. However, there are divergent opinions regarding the time of existence of such laws. If they indeed existed in practice, they lend weight to the fact that such dogs were prevalent in England prior to 1016.`,
-    originally:` The Beagles date back to the 1500s. English hunters have a tendency of using these dogs profusely for the purpose of tracking rabbits, hares, pheasants, quails and other small animals. The breed probably originated as a cross between the Harrier and other types of English hounds.`,
-    currentlyUsedAs: `Guard Dogs,Dog fighting`,
-    training: `The crate should be large enough that your English bulldog can sit up, lie down and stand on it comfortably. The dog should have enough room to stretch out, but excessive space might make the dog soil the crate. Dogs naturally desire to avoid soiling their immediate surroundings. This makes a dog crate a useful aid in house-breaking your English bulldog. English bulldogs cannot put up with weather extremes, such as excessive heat and/or humidity.`,
-    healthCare: `The bull dogs can be vulnerable to cardiomyopathy and other heart problems, sub-aortic stenosis and thyroid, skin and other allergies, epilepsy. They are more likely to pick up tumor-related diseases compared to other breeds. They are, moreover, quite susceptible to cancer, mast cell tumors, arthritis, hip dysplasia, back and knee issues. These dogs may drool and snore. The breed has excessive flatulence, especially when fed something other than their own dog food. Some white Boxers are prone to deafness.`,
-    livingCondition:`Boxers will fit into an apartment quite well if sufficiently exercised. They are buzzing with energy and vigor in indoor conditions and at least an average-sized yard is a necessity for them. Boxers are temperature-sensitive, getting easily overheated and chilling very quickly.`,
-    excersie: `An active, athletic breed, Boxers need daily work or exercise, as well as a long brisk, daily walk. They also enjoy fetching a ball or other sessions of play.`,
-    grooming: `The Boxer's smooth, shorthaired coat is easy to groom. Brush with a firm bristle brush, and bathe only when necessary, for it removes the natural oils from the skin. Some Boxers try and keep themselves clean, grooming themselves like a cat, although some cannot resist rolling in another animal’s poop, which calls for a bath. This breed is an average shedder.`,
- pros: [ 
-     `The pros of owning an English bulldog are so many that they can easily overpower the cons. There are exiguous dogs that have the same degree of stoicism as the bulldog, thereby making it the quintessential family pet. Children adore these dogs immensely. Bull dogs are known for their fidelity and affectionate attitude. They are the perfect “nanny” dog for children, and equally favoured by the elderly, not dashing around their feet and tripping them and large enough for them to be easily seen.The English bulldog, once he has surpassed the lively puppy stage, becomes stolid and sluggish, heavy and ponderous, and can hardly be provoked. Finding a short-tempered bulldog is out of the bounds of possibility.`
-    ],
-    cons: [
-    `There are some demerits of owning an English bulldog. He is definitely not easy to train due to his obdurateness; the bulldog will consume quite a lot of time to learn things, albeit once he has grasped something, it will be stamped on his memory forever. Food is the key to bulldog training (a system of rewards is the backbone of a suitable training mechanism as it makes them quite responsive and engaged).As a breed, the bulldog is an avid eater. So, the owner has to be pragmatic and ration food amounts to avoid this heavy breed from becoming seriously overweight.`
-    ],
-    imageURL:`https://cdn.shopify.com/s/files/1/1199/8502/files/30_1_2048x2048.jpg?4156348428957486057 `
+    litterSize: 5,
+    history: 'The original Scottish Fold was a white barn cat named Susie, who was found at a farm near Coupar Angus in Perthshire, Scotland, in 1961. Susies ears had an unusual fold in their middle, making her resemble an owl. When Susie had kittens, two of them were born with folded ears, and one was acquired by William Ross, a neighbouring farmer and cat-fancier. Ross registered the breed with the Governing Council of the Cat Fancy (GCCF) in the United Kingdom in 1966 and started to breed Scottish Fold kittens with the help of geneticist Pat Turner. The breeding program produced 76 kittens in the first three years – 42 with folded ears and 34 with straight ears. The conclusion from this was that the ear mutation is due to a simple dominant gene.Susies only reproducing offspring was a female Fold named Snooks who was also white; a second kitten was neutered shortly after birth. Three months after Snooks birth Susie was killed by a car. All Scottish Fold cats share a common ancestry to Susie.',
+    originally: 'Scotland, United Kingdom',
+    currentlyUsedAs: 'Scottish Fold currently used as pets',
+    livingCondition:'Because Scottish fold cats are medium-sized and mostly short-haired, they can live almost anywhere with minimal work on your part. They can be as happy in a one-room apartment as they are in a spacious mansion. ',
+    training: `Scottish folds are also quite intelligent and are easily trained to do basic tricks (but, of course, they are cats, so any training is always on their terms). The Scottish fold can be, trained to use a litter box, to come when it is, called, the Scottish fold can be, trained to fetch, and even other things like to jump from one place to another. There are many other things the folds can be, trained to do as long as it is safe for the fold.`,
+    healthCare:'The Scottish Fold is a pretty healthy breed, but there are some hereditary health problems in the breed: Osteochondrodysplasia, a developmental abnormality that affects cartilage and bone development; Polycystic kidney disease (PKD); Cardiomyopathy, a form of heart disease.',
+    excersie: `The Scottish Fold cat breed needs daily exercise combined with plenty of mental stimulation through active play and interaction with people. Cat parents can use cat toys like the Mousr or Cat Dancer to get their cats to play. This will encourage your cat to play.`,
+    grooming: ` Overall, Scottish Folds do not require any special grooming. In order to keep their coat healthy and to remove dead hairs, your cat should be brushed at least once a week—more brushing typically means less hair on your furniture and your clothes.`,
+    pros: ['The Scottish Fold is a sweet, charming breed. She is an easy cat to live with and to care for. She is affectionate and is comfortable with all members of her family. Her tail should be handled gently.'
+],
+    cons: [`Common features of the Scottish Fold include malformations in the forelimbs, hindlimbs, spine and tail. This ultimately leads to painful, stiff, or even fused joints. And we are not just talking about a small unfortunate selection of these cats.`
+],
+    imageURL: `https://www.petsworld.in/blog/wp-content/uploads/2014/07/Scottish-Fold.jpg`
+},
+{
+    breed: `TURKISH ANGORA`,
 
+    origin: `Turkey`,
+    rating: 4,
+    id: 208,
+    lifeExpectancy: {
+        from: 12,
+        to: 18
+    },
+    breedAppearance:'The Turkish Angora is generally a medium sized cat. She has a long, slender body with fine boning. She is a muscular cat and should not appear thin or emaciated. The ears of the Turkish Angora are tall as are the slightly slanted eyes.',
+    breedHighlights:'With their high intelligence and gorgeous white fur, it is easy to see why the Turkish Angora is a national treasure in their home country.',
+    weight: {
+        from: 8,
+        to: 15
+    },
+    height: {
+        from: 9,
+        to: 14
+    },
+    litterSize: 4,
+    history: 'The wild ancestors of the Turkish Angora were some of the first cats domesticated in the Middle Easts Fertile Crescent. An old breed, Europeans noticed them sometime around the 16th century, according to the Turkish Angora Breed Council (TABC), when their brilliant white, long-hair coats made them prized as breeding stock for the more popular Persian.So prolific was this outbreeding process that it nearly drove the Angora to extinction by the end of the 19th century, as their own bloodlines were given a back seat to building up the Persians.The Turkish Angora was saved from oblivion by caretakers in their home country who began collecting white Angoras for breeding and preservation in the Ankara Zoo in the early 20th century, according to the TABC. The zoo has bred and raised Angoras ever since, but did not begin selling cats for export outside of Turkey until the 1960s when breeding pairs began making their way to Canada and the United States.Today, Turkish Angoras are still a rare breed, but they were accepted by the Cat Fanciers Association for championship in 1973. All registered Angoras must still be able to trace their lineage back to the Ankara Zoo.',
+    originally: 'The Turkish Angora (Turkish: Ankara kedisi, "Ankara cat") is a breed of domestic cat. Turkish Angoras are one of the ancient, natural breeds of cat, having originated in central Anatolia, (modern-day Turkey, Ankara region).',
+    currentlyUsedAs: 'Turkish Angora is currently used as a pet.',
+    livingCondition:'Turkish Angoras can get along well with children if they are socialized to them well enough, though very little ones should be cautioned about pulling their long hair or tugging on tails. They are not as accepting of being handled by small kids as some other breeds, like the Himalayan, Nichols says.Angoras are happily accepting of other cats as well as dogs, if properly introduced. But they tend to do just as well on their own and do not traditionally exhibit a lot of stress behaviors if left alone. Like all cats, Turkish Angoras need a variety of toys and a few scratching posts to keep themselves happy (and save your couch from claw marks). They also tend to be loft perchers, so give them some kind of high vantage point from which to sit and watch the house. "They tend to be climbers [and] like to sit up high," Nichols says. A tall cat tree, mounted cat shelves, or a high-up cat hammock will be your Angoras go-to spot. If not designated a tall place to sit, they are most likely going to commandeer one on top of a bookcase or door.',
+    training: `It's a good idea to have another lively feline playmate for The Turkish Angora to play with when you are away.`,
+    healthCare:'Turkish Angoras are susceptible to bacterial and viral infections such as panleukopenia, calicivirus, rhinotracheitis, and rabies, which are preventable through vaccination. ',
+    excersie: `Provide plenty of places to climb. Turkish Angoras love to climb, jump, and play. They will climb on bookcases and tall cabinets.`,
+    grooming: `Maintain the Turkish Angora coat by brushing once or twice a week with a fine-toothed comb or slicker brush to remove excess hair and prevent mats. During the summer, brush more often to prevent hairballs.`,
+    pros: ['They are very lively, playful and active. They love jumping around everything and watching things from on high. If they think they can help their humans with something, they will be at your side right away, trying to solve the problem in their own way. The Turkish Angora is very friendly, cheerful, open and sociable.'
+],
+    cons: [`The Turkish Angora doesn't like being left alone or being left to its own devices. To get attention, they sometimes even chew things. You should take things with a pinch of salt and a sense of humor and don't lose your patience if your Turkish Angora keeps on throwing up surprises.`
+],
+    imageURL: `https://www.petsworld.in/blog/wp-content/uploads/2014/07/Turkish-Angora.jpg`
 }
 ];

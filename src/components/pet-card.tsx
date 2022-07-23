@@ -20,8 +20,8 @@ export function PetCard(props: Props) {
             cover={<img alt='example' className="pet-card-image" src={props.imageURL} />}
             actions={[
                 // <EditOutlined key='edit' />,
-                <InfoCircleOutlined key='setting' />,
-                <ShoppingCartOutlined key='ellipsis' />,
+                // <InfoCircleOutlined key='setting' />,
+                // <ShoppingCartOutlined key='ellipsis' />,
             ]}
         >
             <Meta title={props.name} description={renderDescription()} />
