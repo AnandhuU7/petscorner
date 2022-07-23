@@ -10,6 +10,7 @@ import { BirdsPage } from "./pages/birds-page";
 import { RabbitsPage } from "./pages/rabbits-page";
 import { NavBar } from "./components/navbar";
 import { LoginPage } from "./pages/login-page";
+import { Registration } from "./pages/registration/registration";
 
 function AppContent() {
     const isLogginPage = useLocation().pathname === "/login";
@@ -20,6 +21,9 @@ function AppContent() {
                     <AppHeader></AppHeader>
                     <SearchBar></SearchBar>
                     <NavBar></NavBar>
+                    <Registration></Registration>
+                    
+        
                 </>
             )}
 
