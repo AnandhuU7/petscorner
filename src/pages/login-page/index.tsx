@@ -1,19 +1,42 @@
-import { LockOutlined, UserOutlined } from "@ant-design/icons";
-import { Button, Checkbox, Form, Input } from "antd";
-import { Link } from "react-router-dom";
+import { LockOutlined, MailOutlined } from "@ant-design/icons";
+import { Button, Checkbox, Form, Input, message } from "antd";
+import Password from "antd/lib/input/Password";
+import { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { GlobalContext } from "../../contexts/global.context";
+import { loginUser } from "../../services/user.service";
+import { ILoginCreds, IUser } from "../../types/users.types";
 import "./style.css";
 
 export function LoginPage() {
- 
-    function onFinish(values: any) {
-      
+    const navigate = useNavigate();
+    const { setUser } = useContext(GlobalContext);
+
+    async function onFinish(values: any) {
+        const creds: ILoginCreds = {
+            email: values.email,
+            password: values.password,
+        };
+        try {
+            const response = await loginUser(creds);
+            console.log(response);
+            const user: IUser = response.data;
+
+            if (user) {
+                setUser(user);
+                navigate("/home");
+            }
+        } catch (err) {
+            message.error("Invalid email or password");
+            console.log(err);
+        }
     }
 
     return (
         <div className='login-page'>
             <Form name='normal_login' className='login-form' initialValues={{ remember: true }} onFinish={onFinish}>
-                <Form.Item name='username' rules={[{ required: true, message: "Please input your Username!" }]}>
-                    <Input prefix={<UserOutlined className='site-form-item-icon' />} placeholder='Username' />
+                <Form.Item name='email' rules={[{ required: true, message: "Please input your Email!" }]}>
+                    <Input prefix={<MailOutlined />} placeholder='Email' />
                 </Form.Item>
                 <Form.Item name='password' rules={[{ required: true, message: "Please input your Password!" }]}>
                     <Input
@@ -34,10 +57,10 @@ export function LoginPage() {
 
                 <Form.Item>
                     <Button type='primary' htmlType='submit' className='login-form-button'>
-                        Log in
+                        Login
                     </Button>
-    
-                    <Link className='login-form-forgot' to='#'>
+
+                    <Link className='login-form-forgot' to={"/register"}>
                         Register now
                     </Link>
                 </Form.Item>

@@ -10,20 +10,21 @@ import { BirdsPage } from "./pages/birds-page";
 import { RabbitsPage } from "./pages/rabbits-page";
 import { NavBar } from "./components/navbar";
 import { LoginPage } from "./pages/login-page";
-import { Registration } from "./pages/registration/registration";
+import { Registration } from "./pages/registration-page/registration";
+import { SellPage } from "./pages/sell-page/sell";
+import { LatestPage } from "./pages/latest-page";
+import { GlobalContextProvider } from "./contexts/global.context";
 
 function AppContent() {
     const isLogginPage = useLocation().pathname === "/login";
+    const isRegisterPage = useLocation().pathname === "/register";
     return (
         <div className='App'>
-            {!isLogginPage && (
+            {!isLogginPage && !isRegisterPage && (
                 <>
                     <AppHeader></AppHeader>
                     <SearchBar></SearchBar>
                     <NavBar></NavBar>
-                    <Registration></Registration>
-                    
-        
                 </>
             )}
 
@@ -35,6 +36,9 @@ function AppContent() {
                     <Route path='/birds' element={<BirdsPage />}></Route>
                     <Route path='/rabbits' element={<RabbitsPage />}></Route>
                     <Route path='/login' element={<LoginPage />}></Route>
+                    <Route path='/sell' element={<SellPage />}></Route>
+                    <Route path='/latest' element={<LatestPage />}></Route>
+                    <Route path='/register' element={<Registration />}></Route>
                     <Route path='*' element={<Navigate to={"/home"} replace />} />
                 </Routes>
             </div>
@@ -45,7 +49,9 @@ function AppContent() {
 function App() {
     return (
         <Router>
-            <AppContent />
+            <GlobalContextProvider>
+                <AppContent />
+            </GlobalContextProvider>
         </Router>
     );
 }

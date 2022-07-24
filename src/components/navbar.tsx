@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { GlobalContext } from "../contexts/global.context";
 import "./navbar.css";
 
 export function NavBar() {
     const activeRoute = useLocation().pathname;
+    const { user } = useContext(GlobalContext);
+
     return (
         <div className='app-navbar'>
             <Link className={`navbar-link ${activeRoute === "/home" ? "active" : ""}`} to={"/home"}>
@@ -20,9 +24,16 @@ export function NavBar() {
             <Link className={`navbar-link ${activeRoute === "/birds" ? "active" : ""}`} to={"/birds"}>
                 Birds
             </Link>
-            <Link className={`navbar-link ${activeRoute === "#" ? "active" : ""}`} to={"#"}>
-                Latest
-            </Link>
+            {user && (
+                <Link className={`navbar-link ${activeRoute === "#" ? "active" : ""}`} to={"/latest"}>
+                    Latest
+                </Link>
+            )}
+            {user && (
+                <Link className={`navbar-link ${activeRoute === "#" ? "active" : ""}`} to={"/sell"}>
+                    Sell
+                </Link>
+            )}
         </div>
     );
 }

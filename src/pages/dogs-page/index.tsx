@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { ExpandendPetCard } from "../../components/expandend-pet-card";
 import { DOGS } from "../../constants/dogs";
 

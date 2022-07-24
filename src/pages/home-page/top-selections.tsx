@@ -13,9 +13,9 @@ export function TopSelections() {
         <div className='top-selections'>
             <div className='top-selections-label'>Top Selections</div>
             <div className='top-selections-list-wrapper'>
-                {recommendedItems.map((dog) => {
+                {recommendedItems.map((item) => {
                     return (
-                        <PetCard imageURL={dog.imageURL} description={dog.breedHighlights} name={dog.breed}></PetCard>
+                        <PetCard imageURL={item.imageURL} description={item.breedHighlights} name={item.breed}></PetCard>
                     );
                 })}
             </div>
