@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { GlobalContext } from "../../contexts/global.context";
 import { registrationUser } from "../../services/user.service";
 import { IUser } from "../../types/users.types";
+import "./style.css";
 
 const { Option } = Select;
 
@@ -70,6 +71,7 @@ export function Registration() {
     );
 
     return (
+        <div className="registration">
         <Form {...formItemLayout} form={form} name='register' onFinish={onFinish} initialValues={{}} scrollToFirstError>
             <Form.Item name={"name"} label='Name' rules={[{ required: true }]}>
                 <Input />
@@ -165,10 +167,11 @@ export function Registration() {
                 </Checkbox>
             </Form.Item>
             <Form.Item {...tailFormItemLayout}>
-                <Button type='primary' htmlType='submit'>
+                <Button type='primary' htmlType='submit' className="register">
                     Register
                 </Button>
             </Form.Item>
         </Form>
+        </div>
     );
 }

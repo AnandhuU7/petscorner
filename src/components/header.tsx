@@ -15,7 +15,7 @@ export function AppHeader(): JSX.Element {
             <div className={"email"}>abcdefgh@gmail.com</div>
             <div className={"social-icons"}>
                 {/* <Link to={"#"}> */}
-                    <MailOutlined />
+                <MailOutlined />
                 {/* </Link> */}
                 <FacebookOutlined />
                 <TwitterOutlined />

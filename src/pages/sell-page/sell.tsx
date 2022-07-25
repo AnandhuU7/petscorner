@@ -5,6 +5,7 @@ import { GlobalContext } from "../../contexts/global.context";
 import { createSell } from "../../services/sell.service";
 import { ISell } from "../../types/sell.types";
 import { IUser } from "../../types/users.types";
+import "./style.css";
 
 const { RangePicker } = DatePicker;
 const { TextArea } = Input;
@@ -44,6 +45,7 @@ export function SellPage() {
 
     
     return (
+        <div className="sellpage">
         <Form
             onFinish={onFinish}
             labelCol={{ span: 4 }}
@@ -91,5 +93,6 @@ export function SellPage() {
                 </Button>
             </Form.Item>
         </Form>
+        </div>
     );
 }
