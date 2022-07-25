@@ -50,6 +50,7 @@ export function SellPage() {
                 labelCol={{ span: 4 }}
                 wrapperCol={{ span: 14 }}
                 layout='horizontal'
+                className="sellpage-form"
             // initialValues={{ disabled: componentDisabled }}
             // onValuesChange={onFormLayoutChange}
             // disabled={componentDisabled}
@@ -75,7 +76,7 @@ export function SellPage() {
                 </Form.Item>
 
                 <Form.Item label='Contact Us' name='contactus'>    
-                        <TextArea rows={4} placeholder='*Contacts will show in latest page!!!!!'/>
+                        <TextArea className="danger-input" rows={4} placeholder='*Contacts will show in latest page!!!!!'/>
                 </Form.Item>
 
 
@@ -88,7 +89,7 @@ export function SellPage() {
                     </Upload>
                 </Form.Item>
 
-                <Form.Item label=' ' colon={false}>
+                <Form.Item label='' colon={false}>
                     <Button type='primary' htmlType='submit'>
                         Submit
                     </Button>

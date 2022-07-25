@@ -34,7 +34,11 @@ export function LatestPage() {
                             description={sellItem.description}
                             date={sellItem.date}
                             contactus={sellItem.contactus}
-                            
+                            delete={false}
+                            rate={true}
+                            id={sellItem._id}
+                            forceUpdateList={fetchSells}
+                            rating={sellItem.rating}
                         ></LatestExpandendPetCard>
                     );
                 })}

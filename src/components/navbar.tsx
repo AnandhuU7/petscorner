@@ -24,9 +24,12 @@ export function NavBar() {
             <Link className={`navbar-link ${activeRoute === "/birds" ? "active" : ""}`} to={"/birds"}>
                 Birds
             </Link>
-            <Link className={`navbar-link ${activeRoute === "/admin" ? "active" : ""}`} to={"/admin"}>
-                Admin
-            </Link>
+
+            {user?.isAdmin && (
+                <Link className={`navbar-link ${activeRoute === "/admin" ? "active" : ""}`} to={"/admin"}>
+                    Admin
+                </Link>
+            )}
             {user && (
                 <Link className={`navbar-link ${activeRoute === "/latest" ? "active" : ""}`} to={"/latest"}>
                     Latest

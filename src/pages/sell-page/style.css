@@ -1,4 +1,17 @@
-::placeholder{
-    color: brown;
-    opacity: 1;
+.sellpage .danger-input::placeholder {
+    color: red;
+    text-align: center;
+    opacity: 0.5;
+    padding-top: 10px;
+}
+
+.sellpage {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.sellpage .sellpage-form {
+    align-self: center;
+    width: 1000px;
 }

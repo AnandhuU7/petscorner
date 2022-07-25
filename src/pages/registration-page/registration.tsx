@@ -72,7 +72,7 @@ export function Registration() {
 
     return (
         <div className="registration">
-        <Form {...formItemLayout} form={form} name='register' onFinish={onFinish} initialValues={{}} scrollToFirstError>
+        <Form {...formItemLayout} form={form} name='register' className="registration-form" onFinish={onFinish} initialValues={{}} scrollToFirstError>
             <Form.Item name={"name"} label='Name' rules={[{ required: true }]}>
                 <Input />
             </Form.Item>

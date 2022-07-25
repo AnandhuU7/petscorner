@@ -36,6 +36,7 @@
 
 .latest-expandend-pet-card .expandend-image-wrapper {
     padding: 10px 10% !important;
+    max-height: 220px;
 }
 
 .latest-expandend-pet-card .item .label {
@@ -46,4 +47,9 @@
 .latest-expandend-pet-card .item .value {
     text-align: justify;
 
+}
+.rating-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }

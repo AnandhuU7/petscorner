@@ -15,6 +15,7 @@ import { SellPage } from "./pages/sell-page/sell";
 import { LatestPage } from "./pages/latest-page";
 import { GlobalContextProvider } from "./contexts/global.context";
 import { AdminPage } from "./pages/admin-login/admin";
+import { SearchPage } from "./pages/search/search";
 
 function AppContent() {
     const isLogginPage = useLocation().pathname === "/login";
@@ -29,7 +30,7 @@ function AppContent() {
                 </>
             )}
 
-            <div className={!isLogginPage ? "page-content" : ""}>
+            <div className={!isLogginPage && !isRegisterPage ? "page-content" : ""}>
                 <Routes>
                     <Route path='/home' element={<HomePage />}></Route>
                     <Route path='/dogs' element={<DogsPage />}></Route>
@@ -41,6 +42,7 @@ function AppContent() {
                     <Route path='/latest' element={<LatestPage />}></Route>
                     <Route path='/admin' element={<AdminPage />}></Route>
                     <Route path='/register' element={<Registration />}></Route>
+                    <Route path='/search/:searchKey' element={<SearchPage />}></Route>
                     <Route path='*' element={<Navigate to={"/home"} replace />} />
                 </Routes>
             </div>

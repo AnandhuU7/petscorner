@@ -34,7 +34,11 @@ export function AdminPage() {
                             description={sellItem.description}
                             date={sellItem.date}
                             contactus={sellItem.contactus}
-                        
+                            delete={true}
+                            rate={false}
+                            id={sellItem._id}
+                            forceUpdateList={fetchSells}
+                            rating={sellItem.rating}
                         ></LatestExpandendPetCard>
                         
                     );

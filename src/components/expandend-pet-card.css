@@ -36,6 +36,7 @@
 
 .expandend-pet-card .expandend-image-wrapper {
     padding: 10px 10% !important;
+    max-height: 220px;
 }
 
 .expandend-pet-card .item .label {
