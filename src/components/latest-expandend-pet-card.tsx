@@ -1,3 +1,4 @@
+import { DeleteOutlined } from "@ant-design/icons";
 import { Card, Col, Rate, Row, Space } from "antd";
 import React from "react";
 import "./latest-expandend-pet-card.css";
@@ -8,6 +9,9 @@ interface Props {
     description: string;
     contactus: string;
     imageURL: string;
+    rate:string;
+    delete:boolean;
+    
     
 }
                       
@@ -55,6 +59,9 @@ export function LatestExpandendPetCard(props: Props) {
                         <div className="rate">
                             <div>
                                 <Rate defaultValue={0} />
+                            </div>
+                            <div className="delete">
+                            <DeleteOutlined/>
                             </div>
                         </div>
                     </div>

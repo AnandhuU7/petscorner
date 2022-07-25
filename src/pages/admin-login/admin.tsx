@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import { ExpandendPetCard } from "../../components/expandend-pet-card";
 import { getSellItems } from "../../services/sell.service";
 import { ISell } from "../../types/sell.types";
 import { Buffer } from "buffer";
 
 import "./style.css";
 import { LatestExpandendPetCard } from "../../components/latest-expandend-pet-card";
+import { DeleteOutlined } from "@ant-design/icons";
 
-export function LatestPage() {
+export function AdminPage() {
     const [sellItems, setSellItems] = useState<ISell[]>([]);
 
     useEffect(() => {
@@ -34,11 +34,13 @@ export function LatestPage() {
                             description={sellItem.description}
                             date={sellItem.date}
                             contactus={sellItem.contactus}
-                            
+                        
                         ></LatestExpandendPetCard>
+                        
                     );
                 })}
-            </div>
+                
+            </div> 
         </div>
     );
 }

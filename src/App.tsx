@@ -14,6 +14,7 @@ import { Registration } from "./pages/registration-page/registration";
 import { SellPage } from "./pages/sell-page/sell";
 import { LatestPage } from "./pages/latest-page";
 import { GlobalContextProvider } from "./contexts/global.context";
+import { AdminPage } from "./pages/admin-login/admin";
 
 function AppContent() {
     const isLogginPage = useLocation().pathname === "/login";
@@ -38,6 +39,7 @@ function AppContent() {
                     <Route path='/login' element={<LoginPage />}></Route>
                     <Route path='/sell' element={<SellPage />}></Route>
                     <Route path='/latest' element={<LatestPage />}></Route>
+                    <Route path='/admin' element={<AdminPage />}></Route>
                     <Route path='/register' element={<Registration />}></Route>
                     <Route path='*' element={<Navigate to={"/home"} replace />} />
                 </Routes>
