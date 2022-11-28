@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ExpandendPetCard } from "../../components/expandend-pet-card";
 import { getSellItems } from "../../services/sell.service";
 import { ISell } from "../../types/sell.types";
@@ -6,10 +6,13 @@ import { Buffer } from "buffer";
 
 import "./style.css";
 import { LatestExpandendPetCard } from "../../components/latest-expandend-pet-card";
+import { GlobalContext } from "../../contexts/global.context";
+
 
 export function LatestPage() {
     const [sellItems, setSellItems] = useState<ISell[]>([]);
 
+    const { user } = useContext(GlobalContext);
     useEffect(() => {
         fetchSells();
     }, []);
@@ -34,7 +37,7 @@ export function LatestPage() {
                             description={sellItem.description}
                             date={sellItem.date}
                             contactus={sellItem.contactus}
-                            delete={false}
+                            delete={sellItem.email===user?.email}
                             rate={true}
                             id={sellItem._id}
                             forceUpdateList={fetchSells}

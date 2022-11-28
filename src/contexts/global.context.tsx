@@ -4,7 +4,7 @@ import { IUser } from "../types/users.types";
 
 export interface IGlobalContext {
     user: IUser | null;
-    setUser: (user: IUser) => void;
+    setUser: (user: IUser | null) => void;
 }
 
 interface IProps {
@@ -13,7 +13,7 @@ interface IProps {
 
 const globalContextData: IGlobalContext = {
     user: null,
-    setUser: (user: IUser) => {},
+    setUser: (user: IUser | null) => {},
 };
 
 export const GlobalContext = createContext<IGlobalContext>(globalContextData);

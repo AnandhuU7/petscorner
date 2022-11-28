@@ -25,11 +25,7 @@ export function NavBar() {
                 Birds
             </Link>
 
-            {user?.isAdmin && (
-                <Link className={`navbar-link ${activeRoute === "/admin" ? "active" : ""}`} to={"/admin"}>
-                    Admin
-                </Link>
-            )}
+           
             {user && (
                 <Link className={`navbar-link ${activeRoute === "/latest" ? "active" : ""}`} to={"/latest"}>
                     Latest
@@ -38,6 +34,11 @@ export function NavBar() {
             {user && (
                 <Link className={`navbar-link ${activeRoute === "/sell" ? "active" : ""}`} to={"/sell"}>
                     Sell
+                </Link>
+            )}
+             {user?.isAdmin && (
+                <Link className={`navbar-link ${activeRoute === "/admin" ? "active" : ""}`} to={"/admin"}>
+                    Admin
                 </Link>
             )}
         </div>

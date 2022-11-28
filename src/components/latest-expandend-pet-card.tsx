@@ -1,7 +1,8 @@
 import { DeleteOutlined } from "@ant-design/icons";
 import { Button, Card, Col, message, Popover, Rate, Row, Space } from "antd";
 import moment from "moment";
-import React from "react";
+import React, { useContext } from "react";
+import { GlobalContext } from "../contexts/global.context";
 import { deleteSellItem, updateRating } from "../services/sell.service";
 import { IRating, IRatingParams } from "../types/sell.types";
 import { getAverageRating } from "../utils/rating.utils";
@@ -20,7 +21,9 @@ interface Props {
     forceUpdateList: () => void;
 }
 
-export function LatestExpandendPetCard(props: Props) {
+export function LatestExpandendPetCard(props: Props) { 
+    const { user } = useContext(GlobalContext);
+
     async function deleteItem(id: string) {
         try {
             await deleteSellItem(id);
@@ -71,14 +74,17 @@ export function LatestExpandendPetCard(props: Props) {
                             <div className={"value"}>:{props.contactus}</div>
                         </div>
                         <div>
+                            
                             {props.rate && (
                                 <div className='rating-wrapper'>
                                     <Rate disabled allowHalf defaultValue={getAverageRating(props.rating)} />
+                                {user && !user.isAdmin &&
                                     <RatingPopover
                                         rating={props.rating}
                                         forceUpdateList={props.forceUpdateList}
                                         itemId={props.id}
                                     />
+                                }
                                 </div>
                             )}
                             {props.delete && (

@@ -1,6 +1,4 @@
 import { Footer } from "../../components/footer";
-import { PetCard } from "../../components/pet-card";
-import { DOGS } from "../../constants/dogs";
 import { HomeCarousel } from "./carousel";
 import { ExploreMore } from "./expolre-more";
 import { Recommendations } from "./recommendations";

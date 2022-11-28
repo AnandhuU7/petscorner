@@ -5,7 +5,6 @@ import { Buffer } from "buffer";
 
 import "./style.css";
 import { LatestExpandendPetCard } from "../../components/latest-expandend-pet-card";
-import { DeleteOutlined } from "@ant-design/icons";
 
 export function AdminPage() {
     const [sellItems, setSellItems] = useState<ISell[]>([]);

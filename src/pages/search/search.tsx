@@ -6,7 +6,6 @@ import { useParams } from "react-router-dom";
 
 import "./style.css";
 import { LatestExpandendPetCard } from "../../components/latest-expandend-pet-card";
-import { DeleteOutlined } from "@ant-design/icons";
 
 export function SearchPage() {
     const [sellItems, setSellItems] = useState<ISell[]>([]);

@@ -1,9 +1,5 @@
 import { useState, useEffect } from "react";
 import { PetCard } from "../../components/pet-card";
-import { BIRDS } from "../../constants/birds";
-import { CATS } from "../../constants/cats";
-import { DOGS } from "../../constants/dogs";
-import { RABBITS } from "../../constants/rabbits";
 import { getSellItems } from "../../services/sell.service";
 import { ISell } from "../../types/sell.types";
 import { getAverageRating } from "../../utils/rating.utils";
